@@ -1,0 +1,752 @@
+body {
+  padding-top: 57px;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.me_main_setting {
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 20px;
+}
+.me_setting_menu .me_left_nav {
+  padding: 10px;
+  margin-top: 80px;
+}
+.me_left_nav {
+  float: left;
+  margin-top: 60px;
+  margin-left: 40px;
+  width: 118px;
+  border: 1px #dcdcdc solid;
+  padding: 5px 0;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+.me_setting_menu .me_left_nav_title {
+  line-height: 34px;
+  border-bottom: 1px #dcdcdc solid;
+  font-size: 14px;
+  color: #646464;
+}
+.me_left_nav li {
+  border-bottom: 1px #dcdcdc solid;
+}
+.me_left_nav .current a,
+.me_left_nav li:hover a {
+  color: #2d7bcd;
+}
+.me_left_nav a {
+  display: inline-block;
+  margin: 0 auto;
+  line-height: 34px;
+  border-bottom: 1px #dcdcdc solid;
+  font-size: 14px;
+  color: #646464;
+  text-decoration: none;
+}
+.me_setting_content {
+  background-color: #fff;
+  min-height: 700px;
+  padding-top: 20px;
+  margin-right: 40px;
+}
+.me_setting_main_box {
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+  width: 760px;
+}
+.me_setting_content .hd {
+  line-height: 30px;
+  border-bottom: 2px solid #dcdcdc;
+  padding: 0 10px;
+  font-size: 14px;
+  color: #646464;
+  overflow: hidden;
+  width: 740px;
+}
+.top_right {
+  float: right;
+  padding-right: 10px;
+}
+.top_right a {
+  color: #2d7bcd;
+  text-decoration: none;
+}
+.mod .inner_box {
+  margin: auto;
+  position: relative;
+  visibility: visible;
+  overflow: hidden;
+  /* margin-top: 20px; */
+}
+.safe_main_box {
+  margin: 10px;
+  font-size: 12px;
+  color: #969696;
+}
+.safe_main_box li {
+  margin: 10px 0;
+}
+.safe_main_box span {
+  display: inline-block;
+  line-height: 30px;
+  width: 96px;
+  text-align: right;
+}
+.safe_main_box input {
+  width: 200px;
+  height: 26px;
+  line-height: 22px;
+  border: 1px solid #969696;
+  border-radius: 2px;
+}
+.safe_main_box .bing_wrong {
+  width: 110px;
+  color: red;
+}
+.safe_main_box .safe_mail_btn input {
+  width: 75px;
+  height: 28px;
+  background-color: #00b7ee;
+  border: none;
+  color: #fff;
+}
+.safe_main_box a {
+  color: #2d7bcd;
+}
+.safe_mail_title,
+.banding_phone_title {
+  line-height: 34px;
+  font-size: 14px;
+}
+.safe_mail_title {
+  line-height: 34px;
+  font-size: 14px;
+}
+.safe_main_box {
+  margin: 10px;
+  font-size: 12px;
+  color: #969696;
+}
+.safe_main_box li {
+  margin: 10px 0;
+}
+.safe_main_box span {
+  display: inline-block;
+  line-height: 30px;
+  width: 96px;
+  text-align: right;
+}
+.safe_main_box input {
+  width: 200px;
+  height: 26px;
+  line-height: 22px;
+  border: 1px solid #969696;
+  border-radius: 2px;
+}
+.safe_main_box .bing_wrong {
+  width: 110px;
+  color: red;
+}
+.safe_main_box .safe_mail_btn input {
+  width: 75px;
+  height: 28px;
+  background-color: #00b7ee;
+  border: none;
+  color: #fff;
+}
+.binding_phone_title {
+  line-height: 34px;
+  font-size: 14px;
+}
+.binding_phone_box,
+.binding_alipay_box {
+  margin: 10px;
+  font-size: 12px;
+  color: #969696;
+}
+.binding_phone_box li,
+.binding_alipay_box li {
+  margin: 10px 0;
+}
+.binding_phone_box span,
+.binding_alipay_box span {
+  display: inline-block;
+  line-height: 30px;
+  width: 98px;
+  text-align: right;
+}
+.binding_phone_box input,
+.binding_alipay_box input {
+  width: 200px;
+  height: 26px;
+  line-height: 22px;
+  border: 1px solid #969696;
+  border-radius: 2px;
+}
+.binding_phone_box .phone_btn_yzm {
+  width: 100px;
+  height: 26px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+.binding_phone_box .binding_phone_btn input,
+.binding_alipay_box .binding_alipay_btn input {
+  width: 75px;
+  height: 28px;
+  background-color: #00b7ee;
+  border: none;
+  color: #fff;
+}
+.binding_phone_box .bing_wrong {
+  width: 240px;
+  color: red;
+  text-align: left;
+  margin-left: 4px;
+}
+.inner_box .alipay_img {
+  width: 686px;
+  height: 414px;
+  background-image: url(img/alipay.png);
+  background-repeat: no-repeat;
+  padding: 10px;
+  background-position: center;
+  border: 1px solid #c8c8c8;
+  margin-top: 20px;
+}
+.inner_box .alipay_show_btn a {
+  dispaly: inline-block;
+  margin-left: 40px;
+  text-decoration: underline;
+}
+.invite_main {
+  margin: 10px;
+  font-size: 12px;
+  color: #969696;
+  line-height: 34px;
+}
+.invite_main li {
+  margin: 5px 0;
+}
+.invite_main input {
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.invite_main .invite_jinbi input {
+  width: 35px;
+  height: 20px;
+  border: 1px solid #969696;
+  background-color: #f0f0f0;
+}
+.invite_main .invite_btn input {
+  width: 50px;
+  height: 24px;
+  border: none;
+  background-color: #00b7ee;
+  border-radius: 2px;
+  color: #fff;
+}
+/*预约时间设置*/
+.schedule_setbox {
+  width: 760px;
+  margin: 20px auto;
+}
+/*单次操作设置*/
+.set_singlebox .set_single_title {
+  font-size: 14px;
+  color: #323232;
+  font-family: "微软雅黑";
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.set_singlebox .single_phone_title {
+  background: url(img/order_phone.png);
+  background-repeat: no-repeat;
+  background-position: left 1px;
+}
+.set_singlebox .single_face_title {
+  background: url(img/order_face.png);
+  background-repeat: no-repeat;
+  background-position: 1px 1px;
+}
+.set_singlebox,
+.schedule_address {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.set_singlebox .single_money,
+.set_singlebox .single_time {
+  margin: 5px 0;
+}
+.set_singlebox .single_time select {
+  width: 50px;
+  height: 20px;
+  border: 1px solid #c8c8c8;
+}
+.set_singlebox .single_money input {
+  width: 60px;
+  padding: 0 4px;
+  height: 20px;
+  border: 1px solid #c8c8c8;
+  text-align: right;
+}
+/**/
+.schedule_mainbox {
+  font-size: 12px;
+  /*margin-top:20px;*/
+}
+.time_table,
+.time_table_two {
+  width: 761px;
+  min-height: 220px;
+  margin: 10px auto;
+  border: 1px solid #c8c8c8;
+  font-size: 12px;
+  color: #323232;
+  line-height: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  /*position:relative;*/
+  margin-top: 0;
+}
+.schedule_mainbox .schedule_title .shift_table {
+  color: #2d7bcd;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/*面谈地址*/
+.schedule_setbox .face_address .address {
+  width: 340px;
+  height: 24px;
+  color: #c8c8c8;
+  line-height: 22px;
+}
+.schedule_setbox .face_address .a_btn {
+  display: inline-block;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.schedule_setbox .face_address .a_btn:hover {
+  text-decoration: underline;
+}
+.schedule_setbox .face_address .btn {
+  border: none;
+  background-color: #2d7bcd;
+  color: #fff;
+  width: 48px;
+  height: 26px;
+  margin-left: 10px;
+}
+/*切换当前预约表*/
+.schedule_mainbox .schedule_table_box {
+  overflow: hidden;
+  padding: 10px 0;
+  border: 1px solid #c8c8c8;
+  border-bottom: none;
+  text-align: center;
+  width: 761px;
+}
+.schedule_mainbox .schedule_table_box .shift_time_table {
+  /*float:left;*/
+  display: inline-block;
+  padding: 0px 10px;
+  margin-right: 40px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.schedule_mainbox .schedule_table_box .shift_time_current {
+  background-color: #2d7bcd;
+  color: #fff;
+}
+.schedule_mainbox .schedule_table_box .shift_time_table:hover {
+  background-color: #2d7bcd;
+  color: #fff;
+}
+/*第一个表*/
+.time_table li,
+.time_table_two li {
+  padding: 8px;
+}
+.time_table ul,
+.time_table_two ul {
+  float: left;
+  /*border-right:1px solid #c8c8c8;*/
+  text-align: center;
+}
+.time_table ul {
+  position: relative;
+}
+.time_table ul .xian {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 9999px;
+  background-color: #c8c8c8;
+}
+.time_table .monday_week {
+  border-right: none;
+  width: 103px;
+  position: relative;
+}
+.schedule_mainbox .time_table_new {
+  width: 762px;
+}
+.time_table .day_td,
+.time_table_two .day_td {
+  position: relative;
+}
+.time_table .day_td .xian,
+.time_table_two .day_td .xian,
+.time_table .monday_week .xian {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 1px;
+  height: 9999px;
+  background-color: #c8c8c8;
+}
+.main_time span,
+.main_time_new span {
+  display: block;
+}
+.time_table ul .time_tr,
+.time_table_two .time_tr,
+.time_table ul .main_time,
+.time_table ul .add_time {
+  border-top: 1px solid #c8c8c8;
+}
+.time_table ul .time_tr,
+.time_table_two .time_tr,
+.time_table ul .main_time,
+.time_table ul .add_time_phone {
+  border-top: 1px solid #c8c8c8;
+}
+.time_table ul .time_tr,
+.time_table_two .time_tr,
+.time_table ul .main_time,
+.time_table ul .add_time_face {
+  border-top: 1px solid #c8c8c8;
+}
+ul .time_tr {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.time_table ul .main_time,
+.time_table ul .add_time {
+  width: 70px;
+  cursor: pointer;
+}
+.time_table ul .main_time,
+.time_table ul .add_time_phone {
+  width: 87px;
+  cursor: pointer;
+}
+.time_table ul .main_time,
+.time_table ul .add_time_face {
+  width: 87px;
+  cursor: pointer;
+}
+.time_table ul .main_time,
+.time_table ul .main_time_new {
+  height: 106px;
+}
+.time_table ul .main_time_new {
+  width: 86px;
+}
+.time_table ul .main_time .phone_prompt,
+.time_table ul .main_time_new .phone_prompt {
+  color: #646464;
+  /*padding-left:6px;*/
+  background: url(img/order_phone.png);
+  background-repeat: no-repeat;
+  background-position: 6px 0px;
+}
+.time_table ul .main_time .face_prompt,
+.time_table ul .main_time_new .face_prompt {
+  color: #646464;
+  /*padding-left:6px;*/
+  background: url(img/order_face.png);
+  background-repeat: no-repeat;
+  background-position: 6px 0px;
+}
+.time_table_two .main_time_box .main_time .phone_prompt {
+  color: #646464;
+  /*padding-left:6px;*/
+  background: url(img/order_phone.png);
+  background-repeat: no-repeat;
+  background-position: 10px 0px;
+}
+.time_table_two .main_time_box .main_time .face_prompt {
+  color: #646464;
+  /*padding-left:6px;*/
+  background: url(img/order_face.png);
+  background-repeat: no-repeat;
+  background-position: 10px 0px;
+}
+.time_table ul .add_time {
+  border-bottom: 1px solid #c8c8c8;
+  color: #2d7bcd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.time_table ul .add_time_phone {
+  /*border-bottom:1px solid #c8c8c8;*/
+  color: #2d7bcd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.time_table ul .add_time_face {
+  border-bottom: 1px solid #c8c8c8;
+  color: #2d7bcd;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/*第二个表*/
+.time_table_two {
+  display: none;
+}
+.time_table_two .week_title {
+  overflow: hidden;
+  border: none;
+}
+.time_table_two .week_title .week,
+.time_table_two .week_title .week_day {
+  float: left;
+  width: 87px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: 1px solid #c8c8c8;
+  cursor: pointer;
+}
+.time_table_two .main_time_box {
+  float: left;
+  width: 636px;
+  overflow: hidden;
+}
+.main_time_box .main_time,
+.main_time_box .add_time {
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 70px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+.main_time_box .main_time,
+.main_time_box .add_time_phone {
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 102px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+.main_time_box .main_time,
+.main_time_box .add_time_face {
+  cursor: pointer;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 102px;
+  text-align: center;
+  background-color: #e6e6e6;
+}
+.main_time_box .add_time {
+  height: 44px;
+  line-height: 44px;
+  color: #2d7bcd;
+  text-decoration: underline;
+}
+.main_time_box .add_time_phone {
+  height: 44px;
+  line-height: 44px;
+  color: #2d7bcd;
+  text-decoration: underline;
+}
+.main_time_box .add_time_face {
+  height: 44px;
+  line-height: 44px;
+  color: #2d7bcd;
+  text-decoration: underline;
+}
+.time_table_two .week_title .week_day {
+  float: left;
+  width: 86px;
+  border-right: 1px solid #c8c8c8;
+  border-bottom: none;
+  cursor: pointer;
+  color: #2d7bcd;
+  font-weight: bolder;
+}
+/*添加框*/
+.time_table .addbox,
+.time_table_two .addbox {
+  position: fixed;
+  left: 40%;
+  bottom: 40%;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #c8c8c8;
+  box-shadow: 0 0 10px #969696;
+  /*width:263px;*/
+  text-align: left;
+  z-index: 1;
+}
+/*.addbox .number,.addbox .start_stop{float:left;}*/
+.addbox .number,
+.addbox .start_stop,
+.addbox .addbox_btn,
+.addbox .addbox_single {
+  margin-top: 5px;
+}
+.addbox .start,
+.addbox .stop {
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.addbox select {
+  margin-right: 5px;
+}
+/*.addbox .number{margin-left:20px;}*/
+.addbox .number input {
+  width: 40px;
+  height: 20px;
+  border: 1px solid #c8c8c8;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.addbox .addbox_single .single_price {
+  width: 60px;
+  height: 20px;
+  border: 1px solid #c8c8c8;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.addbox .addbox_single .single_time {
+  width: 54px;
+  height: 20px;
+  border: 1px solid #c8c8c8;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+.addbox .addbox_btn {
+  text-align: right;
+}
+.addbox .addbox_btn input {
+  /*width:40px;*/
+  padding: 0 10px;
+  height: 22px;
+  font-size: 12px;
+  color: #fff;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.addbox .addbox_btn .btn_one,
+.schedule_setbtn .btn_one {
+  background-color: #2d7bcd;
+}
+.addbox .addbox_btn .btn_two,
+.schedule_setbtn .btn_two {
+  background-color: #969696;
+}
+.schedule_setbtn .disable_consult {
+  background-color: #969696;
+  color: #fff;
+}
+/*.tuesday_td,.wednesday_td,.thursday_td,.friday_td,.saturday_td,.sunday_td{border-left:1px solid #c8c8c8;}*/
+/*日程表提交按钮*/
+.schedule_setbtn {
+  text-align: right;
+  margin-bottom: 20px;
+}
+.schedule_setbtn input {
+  padding: 0 12px;
+  height: 28px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  margin-right: 15px;
+}
+/*预约时间设置*/
+/*新预约表*/
+.time_table .new_week span {
+  display: block;
+}
+.time_table .new_week,
+.time_table ul .main_time_new {
+  border-bottom: 1px solid #c8c8c8;
+}
+/*机构管理*/
+.company_managebox {
+  width: 750px;
+}
+.company_managebox .expertbox {
+  float: left;
+  font-size: 14px;
+  margin: 15px;
+  line-height: 24px;
+}
+.company_managebox .expertbox input {
+  vertical-align: middle;
+}
+/*休假*/
+.me_setting_main_box .ul_promptbox {
+  width: 240px;
+  height: 280px;
+  padding: 20px;
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 0 10px #969696;
+  background-color: #e5f9ff;
+  font-size: 12px;
+  position: absolute;
+  left: 100px;
+  top: 120px;
+  z-index: 999;
+}
+.me_setting_main_box .ul_promptbox p {
+  color: #646464;
+}
+.me_setting_main_box .ul_promptbox .ul_promptmain {
+  margin-top: 15px;
+}
+.me_setting_main_box .ul_promptbox .ul_promptmain p {
+  font-weight: bolder;
+  margin-top: 10px;
+}
+.me_setting_main_box .ul_promptbox textarea {
+  width: 260px;
+  height: 100px;
+  background-color: #e5f9ff;
+  border: 1px solid #dcdcdc;
+  resize: none;
+  font-size: 12px;
+  color: #646464;
+  padding: 5px;
+}
+.me_setting_main_box .ul_promptbox .btn {
+  text-align: right;
+  margin-top: 20px;
+}
+.me_setting_main_box .ul_promptbox .btn input {
+  width: 48px;
+  height: 24px;
+  border: none;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 10px;
+}
+.me_setting_main_box .ul_promptmain .ui-datepicker-trigger {
+  vertical-align: middle;
+  margin-left: 4px;
+}

@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<title>bg</title>
+<style>
+/*封面图*/
+.bgmain{
+	width:915px;
+	font:12px '宋体';
+	color:#fff;
+	margin:0 auto;
+}
+.bgmainbox{
+	margin:20px 0;	
+}
+.bgclass{
+	float:right;		
+}
+.bgclass ul li{
+	float:left;
+	font-size:14px;
+	display:block;
+	width:46px;
+	height:26px;
+	margin:0 20px;
+	line-height:26px;
+	cursor:pointer;
+}
+.bgmainbox a{
+	float:right;	
+	color:#2d7bcd;
+	margin-left:100px;
+	margin-right:20px;
+}
+.current_class{
+	background-color:#626262;	
+}
+.bgclass ul li:hover{
+	background-color:#626262;	
+}
+.style_pic ul li {
+	width:264px;
+	height:100px;
+	float:left;	
+	margin:10px 20px;
+}
+.style_pic ul li img{
+	width:264px;
+	height:100px;
+	width:264px;
+	height:100px;
+
+	background-color:#626262;	
+	cursor:pointer;
+}
+.style_pic{
+	display:none;	
+}
+.bgbtn{
+	color:#fff;
+	width:915px;
+	text-align:right;
+	height:28px;
+	margin-top:300px;
+}
+.bgbtn span{
+	display:inline-block;
+	margin-right:20px;	
+}
+.bgbtn span input{
+	vertical-align:middle;
+	margin-right:5px;	
+}
+.cancel,.ok{
+	display:inline-block;
+	padding:0 15px;
+	font-size:14px;
+	cursor:pointer;
+	height:28px;
+	line-height:28px;
+	vertical-align:middle;
+	color:#fff;
+	margin-right:20px;
+}
+.cancel{
+	background-color:#626262;	
+}
+.ok{
+	background-color:#2d7bcd;	
+}
+.selected_bg{
+	border:1px #2d7bcd solid;
+}
+</style>
+</head>
+
+<body>
+<div class='bgmain'>
+	<div class='bgmainbox'>
+    		<a href="bgMod.html">查看全部</a>
+       		<img class='select_icon' src="../images/ck.png" width="15px" height="15px" style='position:absolute;display:none;'>
+       	</div>
+	<div class='bgclass'>
+        		<ul>
+        	    		<li class='current_class' >全部</li>
+               		<li>动漫</li>
+            		<li>电影</li>
+          			<li>宠物</li>
+            		<li>简约</li>
+        	 		<li>复古</li>
+    	      		<li>清新</li>
+	          	</ul>
+           </div>
+	<div class='style_pic' style='display:block;'>
+        		<ul>
+            		<li><img src="../images/1.png"/></li>
+		           <li><img /></li>
+		           <li><img /></li>
+		           <li><img /></li>
+		           <li><img /></li>
+		           <li><img /></li>
+           	</ul>
+           </div>
+        	<div class='style_pic'>
+	        	<ul>
+	                <li><img src='../images/23.png'/></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	           </ul>
+           </div>
+        	<div class='style_pic'>
+        		<ul>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+           	</ul>
+           </div>
+        	<div class='style_pic'>
+	        	<ul>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	           </ul>
+           </div>
+        	<div class='style_pic'>
+	        	<ul>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	           </ul>
+           </div>
+           <div class='style_pic'>
+        		<ul>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+          		</ul>
+           </div>
+           <div class='style_pic'>
+        		<ul>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+	                <li><img /></li>
+          		</ul>
+           </div>
+</div>
+<div class='bgbtn'>
+    		<span><input type='checkbox'/>默认设置(不显示封面)</span><a class='cancel'>取消</a><a class='ok'>确定</a>
+    	</div>
+</div>
+<script>
+var w = $(window).width();
+var btnl = (w-915)/2;
+$('.bgbtn').css({'margin-left':btnl});
+
+
+	$('.bgclass>ul>li').click(function(){
+			$('.current_class').removeClass('current_class');
+			$(this).addClass('current_class');
+			var li = $('.bgclass>ul>li');
+			for(var i=0;i<li.length;i++){
+				if(li[i]==this){
+					var li_show = $('.style_pic');
+					li_show.hide();
+					$(li_show[i]).show();	
+				}	
+			}
+			
+	});
+	$('.cancel').click(function(){
+		$('.bglayer').hide();	
+	});
+	//修改背景图
+	var bgsrc = '';
+	$('.style_pic>ul>li').click(function(){
+		bgsrc = $(this).children().attr('src');
+		$('.style_pic>ul>li>img').removeClass('selected_bg');
+		$(this).children().addClass('selected_bg');
+		
+		    var obj =this; //这个元素就是目标元素，你可以用任何方式将它传入。  
+      
+			var w = obj.offsetWidth, h = obj.offsetHeight;  
+			  
+			//从目标元素开始向外遍历，累加top和left值  
+			for (var t = obj.offsetTop, l = obj.offsetLeft; obj = obj.offsetParent;) {  
+					t += obj.offsetTop;  
+					l += obj.offsetLeft;  
+    		}
+			
+			/**递归获取
+			//获取元素的纵坐标
+			function getTop(e){
+			var offset=e.offsetTop;
+			if(e.offsetParent!=null) offset+=getTop(e.offsetParent);
+			return offset;
+			}
+			//获取元素的横坐标
+			function getLeft(e){
+			var offset=e.offsetLeft;
+			if(e.offsetParent!=null) offset+=getLeft(e.offsetParent);
+			return offset;
+			}
+			*/
+
+			//$('.select_icon').show();
+		//	$('.select_icon').css({'top':t-150,'left':l+1});
+			//alert(t+'vs'+getTop(this)+"..."+l+"vs"+getLeft(this));    
+	});
+	$('.ok').click(function(){
+		if(bgsrc!=null||$.trim(bgsrc)!=''){		$('.bigbox').css('background',"url("+bgsrc+")");	}
+		$('.bglayer').hide();
+	});
+</script>
+</body>
+</html>

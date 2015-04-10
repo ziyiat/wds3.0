@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>专家个人认证</title>
+<meta http-equiv="X-UA-Compatible" content="eadg" />
+<link rel='stylesheet' href='../css/base.css' />
+<link rel='stylesheet' href='../css/common2.css' />
+<link rel='stylesheet' href='../css/verify.css' />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div class='top'>
+	<div class='logoBar'>
+	    <div class='pure-g logo-pure'>
+        	       <div class=' pure-u-1-2'><a href='/'><img src="../css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+        	       </div>
+	      <div id='login_message' class='pure-u-1-2'>
+	       	<div class="navtopbar">
+			<ul class='navtop'>
+				<li><a href='/'>首页</a></li>
+				<li><a href='#'>昵称</a></li>
+				<li class="nav-has-child">
+					<a href='#'>我的消息 <span class="num">2</span></a>
+					<ul class="nav-menu msg-menu">
+						<li><a class="msg3" href="#">新答案</a><span class="num">1</span></li>
+						<li><a class="msg8" href="#">站内消息</a><span class="num">1</span></li>
+					</ul>
+				</li>
+				<li><a href='#'>预约订单</a></li>
+				<li class="nav-has-child"><a href='#'>设置</a>
+						<ul class="nav-menu ">
+							<li><a class="news_subnav" href="#">账号设置</a></li>
+							<li><a href="#">我的点币</a></li>
+							<li><a href="#">个人认证</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+				</li>
+				<div class="msgtip">
+					<div class="msgtip-x">x</div>
+						<ul>
+							<li>您有1条新评价，<a href="javascript:void(0);">点击查看</a></li><!--消息页面-->
+							<li>您有1个新关注人，<a href="javascript:void(0);">点击查看</a></li><!--关注人列表页面-->
+							<li>您有1个新答案，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新网上咨询，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新电话咨询，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新面谈咨询，<a href="javascript:void(0);">点击查看</a></li>
+						</ul>
+				</div>
+			</ul>
+
+		</div>
+		<script>
+					$('.nav-has-child').mouseover(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').show();
+					});
+					$('.nav-has-child').mouseleave(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').hide();
+					});
+					$('.msgtip-x').click(function(){
+						$('.msgtip').hide();
+					});
+		</script>
+	      </div>
+	    </div>
+    </div>
+</div>
+<div class="container person">
+	<div class="title_bar">万点声个人认证</div>
+	<div class="mianbody">
+		<div class="left">
+			<div class="info_box">
+				<div class="avatar"><img src="../images/23.png" width="80px" height="80px" /></div><div class="name"><a href="javascript:void(0);" class="online_prompt">专家名称</a></div>
+				<div class="other">
+					<p><span class="field">昵称：</span><span>张三峰子</span></p>
+					<p><span class="field">专家类别：</span><span>医生</span></p>
+					<p><span class="field">所属机构：</span><span>万点声语网络技术（北京）有限公司</span></p>
+					<p><span class="field">职务职称：</span><span>内科主治医师</span></p>
+				</div>
+				<div class="verify">
+					<p>
+					                 <a href="#" class="expert_medal_box">
+			                   			 <span class="expert_medal medal_lawyer" title="律师"></span>
+			             		    </a>
+			             		    <a href="#" class="cid_iocn">
+			              			 <span class="lv_num l_v" title="实名认证"></span>
+			               		    </a>
+			            			    <a href="#" class="lv_ico color1">
+			                  			 <span class="lv_num l10" title="等级10"></span>
+			            			    </a>	
+			            		</p>
+				</div>
+			</div>
+			<div class="mt10 consult_ways">
+				<div class="title">我的咨询方式：</div>
+				<div class="content">
+					<p class="way"><a href="javascript:void(0);">网上咨询</a></p>
+					<p class="way"><a href="javascript:void(0);">电话咨询</a></p>
+					<p class="un"><a href="javascript:void(0);">现在去开通面谈咨询</a></p>
+				</div>
+			</div>
+			<div class="mt10 mydata">
+				<div class="title">数字信息：</div>
+				<ul class="data">
+					<li>咨询数：999999</li>
+					<li>回答数：88888</li>
+					<li>好评数：7777</li>
+					<li>发文数：666</li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="in_title">认证信息</div>
+
+			<div class="right_main">
+				<!-- 未添加时 -->
+				<div class="person_area">
+					<div class="title">擅长领域<div class="summary">您还没有添加任何擅长说明</div><a href="javascript:void(0);" class="action add">添加</a></div>
+					<div class="content" style="display:none;">
+						<div class="input_box">
+							<textarea name="" placeholder="在此输入擅长的内容..."></textarea>
+						</div>
+						<div class="btn-bar"><button class="wds-btn wds-btn-primary">保存</button><button class="wds-btn wds-btn-primary cancel">取消</button></div>
+					</div>
+				</div>
+				<!-- 添加了 -->
+				<div class="person_area">
+					<div class="title">擅长领域<div class="summary">擅长领域内容的一部分，大概显示20字左右...</div><a href="javascript:void(0);" class="action modify">修改</a></div>
+					<div class="content">
+						<div class="input_box">
+							<textarea name="" placeholder="在此输入擅长的内容..."></textarea>
+						</div>
+						<div class="btn-bar"><button class="wds-btn wds-btn-primary">保存</button><button class="wds-btn wds-btn-primary cancel">取消</button></div>
+					</div>
+				</div>
+			
+				<div class="person_area">
+					<div class="title">在职证明<div class="summary">您还没有添加任何在职证明</div><a href="javascript:void(0);" class="action add">添加</a></div><!-- 修改 modify -->
+					<div class="content">
+						<div class="up_award">
+							<div class="idcard_up">
+								<input type="text" readonly /><button class="wds-btn wds-btn-primary upload">上传</button>
+								<div class="showbox"></div>				
+							</div>
+						</div>
+						
+						<div class="tips">
+							<p>上传的在职证明内容：姓名、职务、公司名称，要求盖有公司的公章。</p>
+							<p>在职证明有利于提高专家的权威和真实度。</p>
+							<button class="wds-btn wds-btn-primary cancel">取消在职证明</button>
+						</div>
+						<div class="clear"></div>
+						
+					</div>
+				</div>
+				
+				<div class="person_area">
+					<div class="title">荣誉证书<div class="summary">您在2015/3/25上传的荣誉证书证明</div><a href="javascript:void(0);" class="action modify">修改</a></div><!--添加 add -->
+					<div class="content">
+						<div class="up_award">
+							<div class="idcard_up">
+								<input type="text" readonly /><button class="wds-btn wds-btn-primary upload">上传</button>
+								<div class="showbox"></div>
+								<div class="new2" id="new_award"></div>
+								<div class="add_card"><a href="javascript:void(0);" onclick="_add_upload('new_award')">+添加</a></div>				
+							</div>
+						</div>
+						<div class="tips">
+							<p>上传荣誉证书，提高专家在网站的公信力，有利于更多的用户对您发起提问，提升您的能力。</p>
+							<p>单次上传最多10张，每张不超过2M。</p>
+							<button class="wds-btn wds-btn-primary cancel">取消荣誉证明</button>
+						</div>
+						<div class="clear"></div>
+						
+					</div>
+				</div>
+				
+				<div class="person_area">
+					<div class="title">曾获殊荣<div class="summary">最近一次添加或修改的曾获殊荣内容，显示20字...</div><a href="javascript:void(0);" class="action modify ">修改</a></div><!-- 添加add -->
+					<div class="content">			
+						<div id="honor">
+							<input type="text" placeholder="在这里输入曾获殊荣的内容..."  class="long" value="2014年获得北京市最受欢迎律师"><!-- 未添加时value="" -->
+							<div class="longinputbox"><!-- 未添加时没有这个 -->
+								<input type="text" placeholder="在这里输入曾获殊荣的内容..."  class="long" value="2010年获得北京市最律师">
+								<a class="remove" href="javascript:void(0);"></a>
+							</div>
+						</div>
+						<a href="javascript:void(0);" onclick="_add_award('honor');" class="add_new">+添加</a>
+						<div class="btn-bar"><button class="wds-btn wds-btn-primary">保存</button><button class="wds-btn wds-btn-primary cancel">取消</button></div>
+					</div>
+				</div>
+
+
+				<div class="person_area"><!-- （最多5项） -->
+					<div class="title">工作成就<div class="summary">最近一次添加或修改的工作内容，显示20字...</div><a href="javascript:void(0);" class="action modify">修改<!-- 或添加 --></a></div>
+					<div class="content">
+						<div id="achievement">
+							<input type="text" placeholder="在这里输入工作成就的内容..."  class="long" value=""><!-- 未添加 -->
+							<div class="longinputbox">
+								<input type="text" placeholder="在这里输入工作成就的内容..."  class="long" value="2010年获得北京市最律师">
+								<a class="remove" href="javascript:void(0);"></a>
+							</div>
+						</div> 
+						<a href="javascript:void(0);" onclick="_add_award('achievement');" class="add_new">+添加</a>
+						<div class="btn-bar"><button class="wds-btn wds-btn-primary">保存</button><button class="wds-btn wds-btn-primary cancel">取消</button></div>
+					</div>
+					
+				</div>
+
+
+				<div class="person_area">
+					<div class="title">专家头像<div class="summary">您在2015/3/26修改的头像</div><a href="javascript:void(0);" class="action">修改头像</a></div>
+				</div>
+
+
+				<div class="person_area">
+					<div class="title">专家认证<div class="summary">万点声在线咨询医生行业专家</div><a href="javascript:void(0);" class="action modify">修改</a></div>
+					<div class="content" style="display:none">
+						<div class="verify_m"><a href="javascript:void(0);" class="wds-btn wds-btn-primary">变更专家认证</a><span class="line-tip">变更专家认证即替换现有专家认证。</span></div>
+						<div class="verify_m"><a href="javascript:void(0);" class="wds-btn wds-btn-primary cancel">取消专家认证</a><span class="line-tip">取消专家身份即为普通用户。</span></div>
+					</div>
+				</div>
+
+				
+				<div class="person_area">
+					<div class="title">详细介绍<div class="summary">您还没有添加任何有关自己的详细介绍</div><a href="javascript:void(0);" class="action add">添加</a></div>
+					<div class="content" style="display:none">
+						<div class="introduce">
+							<div class="btn_bar"><a href="javascript:void(0);" class="wds-btn wds-btn-primary">上传详细介绍</a></div>
+							<div class="tips">
+								<p>上传详细的介绍有助于用户更好的了解您。</p>
+								<p>文档不超过2M</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="person_area">
+					<div class="title">详细介绍<div class="summary">您在2015/3/26上传的详细介绍</div><a href="javascript:void(0);" class="action modify">修改</a></div>
+					<div class="content" style="display:none" >
+						<div class="introduce">
+							<div class="btn_bar"><a href="javascript:void(0);" class="wds-btn wds-btn-primary">上传详细介绍</a></div>
+							<div class="tips">
+								<p>上传详细的介绍有助于用户更好的了解您。</p>
+								<p>文档不超过2M</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript">
+	function _add_upload(id){
+		$('#'+id).append(
+			$('<div>').append([
+				$('<div class="idcard_up" >').append([
+					$('<input type="text" readonly>'),
+					$('<button class="wds-btn wds-btn-primary upload">').append('上传'),
+					$('<div class="showbox">')
+				]),
+				$('<a class="remove" href="javascript:void(0);">')
+			])
+		);
+	}
+	function _add_award(id){
+		$('#'+id).append([
+			$('<div class="longinputbox">').append([
+				'<input type="text" placeholder="在这里输入曾获殊荣的内容..."  class="long" style="margin-top:5px;">',
+				'<a class="remove" href="javascript:void(0);">'
+
+			])
+			
+
+
+		]);
+	}
+	$('.remove').live("click",function(){
+		$(this).parent().remove();
+		reheight();
+	});
+	//添加、修改
+	$(document).ready(function(){
+		$('.action').click(function(e){
+			
+			if($(this).parent().next().css('display') == "none"){
+				$(this).parent().next().show();
+				$(this).parent().parent().addClass('hidein');
+				$(this).html('收起');
+			}else{
+				$(this).parent().next().hide();
+				$(this).parent().parent().removeClass('hidein');
+				if($(this).attr('class').indexOf('add') > -1){
+					$(this).html('添加');
+				}else{
+					$(this).html('修改');
+				}
+			}
+			// if($(this).attr('class').indexOf('hidein') == -1){
+			// 	$(this).parent().next().show();
+			// 	$(this).prev().hide();
+			// 	$(this).html('收起');
+			// 	$(this).removeClass('add');$(this).removeClass('modify');
+			// 	$(this).addClass('hidein');
+			// }else{
+			// 	$(this).parent().next().hide();
+			// 	$(this).prev().show();
+			// 	$(this).html('收起');
+			// 	$(this).removeClass('add');$(this).removeClass('modify');
+			// 	$(this).removeClass('hidein');
+			// }
+		});
+
+
+	});
+
+</script>
+<!-- 页脚 -->
+<footer class="copyright">
+	<div class="copy_link">
+		<a target="_blank" href="aboutus.html">关于本站</a>
+		<a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+		<a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+		<a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+		<a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+		<a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+		<!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+	</div>
+	<div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+	<div class="copy_number">
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<span id="cnzz_stat_icon_1253060728">
+	<a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+	<img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+	<div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+	<div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+</footer>
+</body>
+</html>

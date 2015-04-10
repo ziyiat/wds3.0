@@ -1,0 +1,889 @@
+@charset "utf-8";
+@width: 1002px;
+@base-color:#2d7bcd;
+@font-base:'SimSun';
+@font-yahei:'Microsoft YaHei';
+@left-w: 280px;
+@right-w: @width - @left-w - 10px;
+@border-color: #c8c8c8;
+.container{
+	width: @width;
+	margin: 0 auto;
+	font-family: @font-base;
+	a{
+		color: @base-color;
+	}
+}
+.left{
+	position: relative;
+	width: @left-w;
+	.title{
+		width: 100%;
+		.bfff;
+		font-family: @font-yahei;
+		font-size: 34px;
+		font-weight: bold;
+		color: @base-color;
+		text-align: center;
+		margin-top: 600px;
+	}
+	.markline{
+		position: absolute;
+		top: 0;
+		right: 20px;
+		width: 6px;	
+		height: 99999px;
+	}
+}
+.necess{
+	.markline{
+		background-color: #FF8140;
+		height: 1354px;
+	}
+}
+.unnecess{
+	overflow: hidden;
+	position: relative;
+	.markline{
+		background-color: #009944;
+	}	
+	.verify_area{
+		.title:before{
+			background-color: #009944;
+		}
+		.title{
+			margin-bottom: 10px;
+		}
+
+		input[type="text"]{
+			width: 632px;
+			border: 1px @border-color solid;
+			height: 32px;
+		}
+	}
+	.upload{
+		input[type="text"]{
+			width: 198px;
+			height: 22px;
+		}
+	}
+	textarea{
+		width: 632px;
+		height: 126px;
+		border: 1px @border-color solid;
+		resize:none;
+	}
+}
+.right{
+	width: @right-w;
+}
+.bfff{
+	background-color: #fff;
+}
+.red{
+	color: #ff0000;
+}
+.tips{
+	font-size: 12px;
+	color: #999;
+}
+.title_bar{
+	.bfff;
+	line-height: 48px;
+	text-align: center;
+	font-family: @font-yahei;
+	font-size: 18px;
+	font-weight: bold;
+	color: #333;
+	margin: 20px 0;
+}
+.verify_area{
+	padding: 20px;
+	.bfff;
+	.title{
+		position: relative;
+		font-size: 14px;
+		color: #666;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.title:before{
+		display: inline-block;
+		content: "";
+		width: 20px;
+		height: 6px;
+		position: absolute;
+		left: -50px;
+		background-color: #FF8140;
+		top: 4px;
+	}
+	.upload_imgbox{
+		margin-left: 20px;
+		min-height: 455px;
+	}
+	.tips{
+		margin-left: 20px;
+	}
+	.content{
+		margin-left: 20px;
+		font-size: 12px;
+		color: #666;
+	}
+	input,select{
+		height: 22px;
+		border: 1px @border-color solid;
+	}
+	input[type="text"]{
+		width: 138px;
+	}
+	select{
+		width: 68px;
+		margin-right: 10px;
+	}
+	select.city{
+		margin-left: 10px;
+	}
+	.infos{
+		margin-bottom: 15px;
+		position: relative;
+		.field{
+			display: inline-block;
+			width: 90px;
+			text-align: right;
+			margin-right: 5px;
+
+		}
+	}
+	.infos.upload{
+		position: relative;
+		overflow: auto;
+		.field{
+			float: left;
+			line-height: 24px;
+		}
+		.idcard_up{
+			float: left;
+		}
+		.tips{
+			position: absolute;
+			bottom: 40px;
+			right: 20px;
+			li{
+				list-style-type: decimal;
+			}
+			li:nth-child(1):before{
+				content: "提示：";
+				color: #ff0000;
+				position: absolute;
+				left: -4.5em;
+			}
+		}
+	}
+	.add_card{
+		margin-left: calc(100px + 200px - 65px);
+	}
+	.wds-btn{
+		color: #fff;
+		width: 140px;
+		height: 34px;
+		text-decoration: none;	
+		line-height: 34px;
+		text-align: center;
+	}
+	.wds-btn.sms{
+		width: 98px;
+		height: 24px;
+		line-height: 24px;
+		margin-left: 10px;
+		font-size: 12px;
+		background-color: @base-color;
+	}
+	.wds-btn.sms.wait{
+		background-color: #999;
+	}
+	.word_tip{
+		text-align: right;
+		padding-right: 20px;
+		margin-top: 10px;
+		a{
+			text-decoration: none;
+			color: @base-color;
+			margin-left: 10px;
+		}
+	}
+	.explain{
+		vertical-align: bottom;
+		font-size: 12px;
+		color: #999;
+		font-weight: normal;
+	}
+	.content .explain{
+		margin-left: 20px;
+	}
+	.layer{
+		display: none;
+		position: absolute;
+		left: 95px;
+		top: 20px;
+		border: 1px @border-color solid;
+		background-color: #fff;
+		width: 523px;
+		z-index: 999;
+	}
+}
+.selected_cate{
+	margin-left: 95px;
+	margin-top: 10px;
+}
+.choice_expertbox{
+	margin-top: 10px;
+	margin-left: 10px;
+	.choose_expert{
+		margin-bottom: 15px;
+		a{
+			color: @base-color;
+		}
+	}
+	.choose_classbox{
+		margin-right: 20px;
+		a{
+			margin-left: 20px;
+			margin-bottom: 20px;
+			padding: 1px 2px;
+			float: left;
+		}
+		a.selected,a:hover{
+			color: #fff;
+			background-color: @base-color;
+		}
+	}
+	.choice_expertbtn{
+		display: none;
+		text-align: right;
+		.wds-btn{
+			width: 48px;
+			height: 24px;
+			line-height: 22px;
+			margin-bottom: 10px;
+			margin-right: 20px;
+		}
+	}
+	a{
+		color: #666;
+		text-decoration: none;
+	}
+}
+.information{
+
+}
+.idcard_up{
+	display: inline-block;
+	input[type="text"]{
+		width: 198px;
+		height: 22px;
+		border: 1px @border-color solid;
+	}
+	.showbox{
+		width: 198px;
+		height: 139px;
+		border: 1px @border-color solid;
+		margin-top: 5px;
+	}
+	.wds-btn.upload{
+		width: 48px;
+		height: 24px;
+		margin-left: 10px;
+		line-height: 20px;
+	}
+	
+}
+
+.remove{
+	display: inline-block;	
+	width: 20px;
+	height: 20px;
+	background: url(img/deliocn.png) no-repeat 5px 5px;
+	margin-left: 20px;
+}
+.remove:hover{
+	background: url(img/deliocn.png) no-repeat -19px 5px;
+}
+.hide_area{
+	overflow: hidden;
+	animation: hide .3s;
+}
+.bottom-hide{
+	.bfff;
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	.hidein{
+		position: absolute;
+		left: 20px;
+		
+		.icon-hidein{
+			background-position: -75px -86px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.icon-showout{
+			background-position: -75px -104px;
+		}
+	}
+}
+.longinputbox{
+	position: relative;
+	.remove{
+		position: absolute;
+		right: 10px;
+		top: 10px;
+	}
+}
+.bottom_bar{
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	.bfff;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #999;
+	input[type="checkbox"]{
+		border-color: @border-color;
+		vertical-align: -2px;
+	}
+	.radius{
+		border-radius: 2px;
+		width: 108px;
+		height: 32px;
+		margin-left: 20px;
+	}
+}
+.unnecess.hide{
+	height: 50px;	
+	.bottom-hide{
+		margin-top: 0;
+	}
+	.hide_area{
+	
+
+	}
+	.transition();
+}
+@keyframes 'hide'{
+	100%{
+		height: 0px;
+	}
+}
+/* org */
+.org.unnecess{
+	input[type="text"]{
+		width: 140px;
+		height: 22px;
+	}
+	.upload input[type="text"]{
+		width: 198px;
+	}
+}
+/* 个人 */
+@p-left-w:240px;
+@p-right-w:@width - @p-left-w - 20px;
+@p-border:#dcdcdc solid 1px;
+.person{
+	.title_bar{
+		margin-bottom: 10px	;
+	}
+	.left{
+		color: #666;
+		width: @p-left-w;
+		height: auto;
+		.title{
+			color: #666;
+			text-align: left;
+			margin-top: 0;
+			font-size: 12px;
+			font-family: @font-base;
+		}
+	}
+	.right{
+		width: @p-right-w;
+		color: #666;
+	}
+	.in_title{
+		.bfff;
+		padding: 0 20px;
+		line-height: 34px;
+		font-family: @font-base;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.info_box{
+		.bfff;
+		font-size: 12px;
+		padding: 20px;
+		.avatar{
+			display: inline-block;
+		}
+		.name{
+			position: relative;
+			top: -10px;
+			font-size: 14px;
+			display: inline-block;
+			margin-left: 10px;
+		}
+		.other{
+			margin-top: 20px;
+			p{
+				display: block;
+				margin-top: 15px;
+				overflow: auto;
+				span{
+					display: block;
+					float: left;
+				}
+				span:nth-child(2){
+					width: @p-left-w - 40px - 60px;
+				}
+				
+			}
+			p:nth-child(1){
+				margin-top: 0;
+			}
+		}
+		.field{
+			display: inline-block;
+			width: 5em;
+			text-align: right;
+		}
+		.verify{
+			margin-top: 20px;
+			border-top: 1px solid #dcdcdc ;
+			padding-top: 15px;
+			a{
+				text-decoration: none;
+			}
+		}
+	}
+	.right_main{
+		.bfff;
+		padding: 20px;
+		margin-top: 10px;
+	}
+	.consult_ways{
+		.bfff;
+		padding: 20px;
+		p{
+			margin-top: 15px;
+			margin-left: 20px;
+		}
+		.way{
+			a{
+				display: inline-block;
+				text-align: center;
+				background: @base-color;
+				color: #fff;
+				text-decoration: none;
+				width: 86px;
+				height: 26px;
+				line-height: 26px;
+			}
+		}
+	}
+	.mydata{
+		.bfff;
+		padding: 20px;
+		font-size: 12px;
+		ul{
+			margin-left: 20px;
+		}
+		li{
+			margin-top: 15px;
+		}
+	}
+	
+
+}
+.person_area{
+	position: relative;
+	border: @p-border;
+	margin-bottom: 20px;
+	padding: 0 20px;
+	.title{
+		position: relative;
+		line-height: 42px;
+		font-size: 12px;
+		font-weight: bold;
+		.summary{
+			position: absolute;
+			top: 0;
+			left: 185px;
+			font-weight: normal;
+		}
+		.action{
+			position: absolute;
+			font-weight: normal;
+			top: 0;
+			right: 20px;
+			text-decoration: none;
+		}
+	}
+	.input_box{
+		width:648px;
+		height:150px;
+		padding: 5px;
+		border: @p-border;
+	}
+	.btn-bar{
+		margin-top: 15px;
+		margin-bottom: 20px;
+		.wds-btn{
+			margin-left: 20px;
+			width: 48px;
+			height: 22px;
+		}
+	}
+
+	textarea{
+		width: 100%;
+		height: 100%;
+		border: none;
+		resize:none;
+		text-align: left;
+		font-size: 12px;
+		color: #666;
+	}
+	.up_award,.tips{
+		float: left;
+	}
+	.up_award{
+		width: 298px;
+		margin-left: 20px;
+		margin-bottom: 20px;
+	}
+	.idcard_up{
+		margin-top: 10px;
+	}
+	.tips{
+		position: relative;
+		width: 245px;
+		height: 132px;
+		margin-left: 10px;
+		padding: 20px 40px;
+		border-left: @p-border;
+		.wds-btn{
+			position: absolute;
+			bottom: 0;
+			width: 90px;
+			height: 24px;
+			font-size: 12px;
+		}
+	}
+	.add_card{
+		margin-left: 160px;
+		margin-top: 10px;
+	}
+	input.long{
+		width: 658px;
+		height: 34px;
+		border: @p-border;
+		font-size: 12px;
+		color: #666;
+		margin-top: 5px;
+	}
+	input.long:nth-child(1){
+		margin-top: 0;
+	}
+	.add_new{
+		position: absolute;
+		right: 40px;
+
+		font-size: 12px;
+		text-decoration: none;
+		margin-top: 10px;
+	}
+	.verify_m{
+		font-size: 12px;
+		margin-left: 20px;
+		.wds-btn{
+			color: #fff;
+			width: 90px;
+			height: 22px;
+			line-height: 22px;
+			font-size: 12px;
+			text-align: center;
+		}
+	}
+	.verify_m:nth-child(1){
+		margin-bottom: 15px;
+	}
+	.verify_m:nth-child(2){
+		margin-bottom: 20px;
+	}
+	.line-tip:before{
+		content: "提示：";
+		color: #f00;
+		margin-left: 20px;
+	}
+	.introduce{
+		overflow: hidden;
+		height: 80px;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		margin-top: 15px;
+		.wds-btn{
+			width: 90px;
+			height: 20px;
+			line-height: 20px;
+			color: #fff;
+			font-size: 12px;
+			margin-top: 30px;
+		}
+		.btn_bar{
+			width: 298px;
+			float: left;
+			text-align: center;
+		}
+		.tips{
+			float: left;
+		}
+	}
+	.content{
+		display: none;
+	}
+}
+.person_area.hidein{
+	.content{
+		display: block;
+	}
+	.title .summary{
+		display: none;	
+	}
+}
+.wds-btn.cancel{
+	background-color: #999;
+}
+.transition(@p:all,@d:1s,@f:ease,@dy:0s){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}
+/*等级 认证*/
+.expertiocn {
+  height: 20px;
+}
+.expertiocn a {
+  text-decoration: none;
+}
+.lv_num.l_v {
+  background-position: 0px -563px;
+}
+.lv_num {
+  vertical-align: -1px;
+  display: inline-block;
+  height: 18px;
+  font-size: 0px;
+  line-height: normal;
+  width: 38px;
+  background: url("img/lv_iocn.png") no-repeat scroll 0px -120px transparent;
+}
+/*用户等级*/
+.lv_ico.color2 {
+  background-position: 0 -15px;
+}
+.lv_ico.color3 {
+  background-position: 0 -30px;
+}
+.lv_ico.color4 {
+  background-position: 0 -45px;
+}
+.lv_num.l0 {
+  background-position: 0 0px;
+}
+.lv_num.l1 {
+  background-position: 0 -26px;
+}
+/*.lv_ico.color1 .lv_num.l1, .lv_num.l1b {background-position:0 -130px}*/
+span.lv_num.l2 {
+  background-position: 0 -53px;
+}
+.lv_num.l3 {
+  background-position: 0 -80px;
+}
+.lv_num.l4 {
+  background-position: 0 -107px;
+}
+.lv_num.l5 {
+  background-position: 0 -134px;
+}
+.lv_num.l6 {
+  background-position: 0 -161px;
+}
+.lv_num.l7 {
+  background-position: 0 -188px;
+}
+/*.lv_ico.color2 .lv_num.l7, .lv_num.l7b {background-position:0 -200px}*/
+.lv_num.l8 {
+  background-position: 0 -215px;
+}
+.lv_num.l9 {
+  background-position: 0 -242px;
+}
+.lv_num.l10 {
+  background-position: 0 -269px;
+}
+.lv_num.l11 {
+  background-position: 0 -296px;
+}
+.lv_num.l12 {
+  background-position: 0 -323px;
+}
+.lv_num.l13 {
+  background-position: 0 -350px;
+}
+.lv_num.l14 {
+  background-position: 0 -377px;
+}
+/*.lv_ico.color3 .lv_num.l14, .lv_num.l14b {background-position:0 -280px}*/
+.lv_num.l15 {
+  background-position: 0 -404px;
+}
+.lv_num.l16 {
+  background-position: 0 -431px;
+}
+.lv_num.l17 {
+  background-position: 0 -458px;
+}
+.lv_num.l18 {
+  background-position: 0 -485px;
+}
+.lv_num.l19 {
+  background-position: 0 -512px;
+}
+.lv_num.l20 {
+  background-position: 0 -539px;
+}
+/*专家徽章*/
+.expert_medal_box {
+  vertical-align: -2px;
+  margin: 0 4px;
+}
+.expert_medal {
+  display: inline-block;
+  height: 18px;
+  width: 26px;
+  background: url(img/expert_logo.png);
+  background-repeat: no-repeat;
+}
+.medal_western_medicine {
+  background-position: top;
+}
+/*西医*/
+.medal_chinese_medicine {
+  background-position: 0 -23px;
+}
+/*中医*/
+.medal_lawyer {
+  background-position: 0 -46px;
+}
+/*律师*/
+.medal_technician {
+  background-position: 0 -69px;
+}
+/*技师*/
+.medal_love {
+  background-position: 0 -483px;
+}
+/*情感咨询*/
+.medal_translate {
+  background-position: 0 -115px;
+}
+/*翻译*/
+.medal_IT {
+  background-position: 0 -138px;
+}
+/*IT互联网*/
+.medal_pet {
+  background-position: 0 -161px;
+}
+/*宠物*/
+.medal_agriculture {
+  background-position: 0 -184px;
+}
+/*农业*/
+.medal_car {
+  background-position: 0 -207px;
+}
+/*汽车*/
+.medal_design {
+  background-position: 0 -230px;
+}
+/*设计传媒*/
+.medal_consult {
+  background-position: 0 -253px;
+}
+/*咨询商业*/
+.medal_professor {
+  background-position: 0 -276px;
+}
+/*教育*/
+.medal_real_estate {
+  background-position: 0 -299px;
+}
+/*房产*/
+.medal_building {
+  background-position: 0 -322px;
+}
+/*建筑交通*/
+.medal_electron {
+  background-position: 0 -345px;
+}
+/*数码通信*/
+.medal_beauty {
+  background-position: 0 -368px;
+}
+/*美容化妆*/
+.medal_game {
+  background-position: 0 -391px;
+}
+/*游戏动漫*/
+.medal_art {
+  background-position: 0 -414px;
+}
+/*文学艺术*/
+.medal_e-commerce {
+  background-position: 0 -437px;
+}
+/*电子商务*/
+.medal_child {
+  background-position: 0 -460px;
+}
+/*育儿孕妇*/
+/*.medal_commercial{background-position:0 -200px;}商业*/
+/*.medal_internet{background-position:0 -400px;}互联网*/
+/*.medal_entertainment{background-position:0 -240px;}娱乐*/
+/*.medal_tourism{background-position:0 -300px;}旅游*/
+/*.medal_kindergarten_teacher{background-position:0 -320px;}幼教*/
+/*.medal_sports{background-position:0 -380px;}体育运动*/
+/*.medal_communication{background-position:0 -460px;}通信*/
+/*.medal_traffic{background-position:0 -540px;}交通*/
+/*.medal_health{background-position:0 -560px;}健康*/
+/*.medal_fashion{background-position:0 -580px;}时尚购物*/
+/*.medal_stay{background-position:0 -620px;}餐饮住宿*/
+/*.medal_life{background-position:0 -660px;}家居生活*/
+/*.medal_military{background-position:0 -680px;}军事*/
+/*.medal_media{background-position:0 -700px;}传媒*/
+/*.medal_make{background-position:0 -720px;}制造*/
+/*.medal_high_teacher{background-position:0 -60px;}中学老师*/
+/*.medal_default{background-position:0 -483px;}默认*/
+
+
+.sms_verify{
+	position: absolute;
+	width: 230px;
+	padding: 10px;
+	background: #e5f9ff;
+	border: 1px solid #c8c8c8;
+	box-shadow: 1px 1px 2px #dcdcdc;
+}

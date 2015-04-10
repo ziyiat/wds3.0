@@ -1,0 +1,126 @@
+@charset "utf-8";
+body {
+  min-height: 2000px;
+}
+.layer {
+  display: none;
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  margin: auto;
+  background: #e5f9ff;
+  padding: 10px;
+  -moz-box-shadow: -4px 4px 2px #e5e5e5;
+  -webkit-box-shadow: -4px 4px 2px #e5e5e5;
+  -o-box-shadow: -4px 4px 2px #e5e5e5;
+  box-shadow: -4px 4px 2px #e5e5e5;
+}
+.layer .title {
+  font-size: 14px;
+  font-family: 'SimSun';
+  font-weight: bold;
+  margin: 10px;
+}
+.layer .content {
+  margin: 10px;
+  font-size: 12px;
+  font-family: 'SimSun';
+}
+.layer .content p {
+  margin: .5em 0;
+}
+.eval-icon {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  background: url(img/eval-icon.png) no-repeat;
+}
+.eval,
+.comp {
+  width: 400px;
+  color: #333;
+}
+.eval .best,
+.comp .best {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  background: url(img/eval-icon.png) no-repeat;
+  background-position: 0 -50px;
+  padding-left: 20px;
+}
+.eval .well,
+.comp .well {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  background: url(img/eval-icon.png) no-repeat;
+  background-position: 0 -33px;
+  padding-left: 20px;
+}
+.eval .bad,
+.comp .bad {
+  display: inline-block;
+  height: 18px;
+  line-height: 18px;
+  background: url(img/eval-icon.png) no-repeat;
+  background-position: 0 -16px;
+  padding-left: 20px;
+}
+.eval input[type="radio"],
+.comp input[type="radio"] {
+  margin-left: 20px;
+}
+.eval textarea,
+.comp textarea {
+  color: #666;
+  width: 100%;
+  height: 100%;
+  border: none;
+  resize: none;
+  background: #e5f9ff;
+}
+.eval .txarea,
+.comp .txarea {
+  height: 180px;
+  padding: 10px;
+  border: 1px #c8c8c8 solid;
+}
+.eval form,
+.comp form {
+  width: 360px;
+  margin: 0 auto;
+}
+.eval .words_count,
+.comp .words_count {
+  text-align: right;
+}
+.eval .bottom,
+.comp .bottom {
+  text-align: right;
+  padding-right: 40px;
+  margin-bottom: 20px;
+}
+.comp {
+  width: 400px;
+}
+.wds-btn {
+  width: 48px;
+  height: 24px;
+  background: #2d7bcd;
+  border: none;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.wds-btn-cancel {
+  background: #999;
+}
+.wds-btn-cancel:hover {
+  background: #999;
+}
+.transition {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}

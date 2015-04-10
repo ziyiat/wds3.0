@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>机构认证</title>
+<meta http-equiv="X-UA-Compatible" content="eadg" />
+<link rel='stylesheet' href='../css/base.css' />
+<link rel='stylesheet' href='../css/common2.css' />
+<link rel='stylesheet' href='../css/verify.css' />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+<div class='top'>
+	<div class='logoBar'>
+	    <div class='pure-g logo-pure'>
+        	       <div class=' pure-u-1-2'><a href='/'><img src="../css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+        	       </div>
+	      <div id='login_message' class='pure-u-1-2'>
+	       	<div class="navtopbar">
+			<ul class='navtop'>
+				<li><a href='/'>首页</a></li>
+				<li><a href='#'>昵称</a></li>
+				<li class="nav-has-child">
+					<a href='#'>我的消息 <span class="num">2</span></a>
+					<ul class="nav-menu msg-menu">
+						<li><a class="msg3" href="#">新答案</a><span class="num">1</span></li>
+						<li><a class="msg8" href="#">站内消息</a><span class="num">1</span></li>
+					</ul>
+				</li>
+				<li><a href='#'>预约订单</a></li>
+				<li class="nav-has-child"><a href='#'>设置</a>
+						<ul class="nav-menu ">
+							<li><a class="news_subnav" href="#">账号设置</a></li>
+							<li><a href="#">我的点币</a></li>
+							<li><a href="#">个人认证</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+				</li>
+				<div class="msgtip">
+					<div class="msgtip-x">x</div>
+						<ul>
+							<li>您有1条新评价，<a href="javascript:void(0);">点击查看</a></li><!--消息页面-->
+							<li>您有1个新关注人，<a href="javascript:void(0);">点击查看</a></li><!--关注人列表页面-->
+							<li>您有1个新答案，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新网上咨询，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新电话咨询，<a href="javascript:void(0);">点击查看</a></li>
+							<li>您有1个新面谈咨询，<a href="javascript:void(0);">点击查看</a></li>
+						</ul>
+				</div>
+			</ul>
+
+		</div>
+		<script>
+					$('.nav-has-child').mouseover(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').show();
+					});
+					$('.nav-has-child').mouseleave(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').hide();
+					});
+					$('.msgtip-x').click(function(){
+						$('.msgtip').hide();
+					});
+		</script>
+	      </div>
+	    </div>
+    </div>
+</div>
+<div class="container">
+	<div class="title_bar">
+		万点声机构认证
+	</div>
+	<div class="necess">
+		<div class="left bfff">
+			<div class="title">必填项</div>
+			<div class="markline"></div>
+		</div>
+		<div class="right">
+			<div class="verify_area">
+				<div class="title">1.上传头像</div>
+				<div class="upload_imgbox">
+					kj
+				</div>
+				<div class="tips"><span class="red">提示：</span>建议上传本人近期工作照，照片不要带有任何联系方式。</div>
+			</div><!-- end area -->
+			<div class="verify_area mt10">
+				<div class="title">2.机构资料</div>
+				<div class="content information">
+					<div class="infos"><span class="field">机构名称：</span><input type="text" /></div>
+					<div class="infos"><span class="field">所在地：</span><select class="pro"></select>省/市 <select class="city"></select>市/区</div>
+					<div class="infos"><span class="field">机构分类：</span><a href="javascript:void(0);">点击选择分类</a><!-- (选完分类后如此显示) -->
+						<div class="selected_cate">心理咨询>婚姻情感，神经官能症，婆媳关系</div>
+					</div>	
+					<div class="infos"><span class="field">机构分类：</span><a href="javascript:void(0);" onclick="$('.layer').show();">点击选择分类</a>
+						<div class="layer">
+							<div style="display: block;"  class="choice_expertbox">
+								<div class="choose_expert">
+									<div class="class_level">
+										<a class="cate" >全部分类:</a><a href="#">心理咨询（//选了一级后，下面变二级分类）</a> > <a href="#">二级</a>
+									</div>
+								</div>
+								<div class="choose_classbox" style="float:left;">
+									<div class="catebox">
+										      <a href="#" class="selected">心理咨询</a><!-- 到了最后一级 显示确定按钮： $('.choice_expertbtn').show();  选中加selected  -->
+								                                <a href="#">律师</a>
+								                                <a href="#">西医</a>
+								                                <a href="#">互联网</a>
+								                                <a href="#">中医</a>
+								                                <a href="#">翻译</a>
+								                                <a href="#">孕妇育儿</a>
+								                                <a href="#">宠物</a>
+								                                <a href="#">电子商务</a>
+								                                <a href="#">商业咨询</a>
+								                                <a href="#">中学教育</a>
+								                                <a href="#">专业培训</a>
+								                                <a href="#">传媒设计</a>
+									</div>
+								</div>
+								<div class="choice_expertbtn">
+									<input  id="cate_ok" class="wds-btn wds-btn-primary" value="确定" type="button" >
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="infos upload" id='clone'><span class="field">营业执照：</span>
+						<div class="idcard_up">
+							<input type="text" readonly /><button class="wds-btn wds-btn-primary upload">上传</button>
+							<div class="showbox"></div>				
+						</div>
+					</div>
+					<div class="new_upload" id="new1"></div>
+					<div class="add_card"><a href="javascript:void(0);" onclick="_add_upload('new1');">+添加证书</a></div>
+
+				</div>
+			</div><!-- end area -->
+		</div><!-- end right -->
+		<div class="clear"></div>
+	</div>
+	<div class="unnecess mt10 hide org">
+		<div class="left bfff">
+			<div class="title">选填项</div>
+			<div class="markline"></div>
+		</div>
+		<div class="right">
+			<div class="hide_area">
+				<div class="verify_area">
+					<div class="title">1.联系方式</div>
+					<div class="content">
+						<div class="infos"><span class="field">联系手机：</span><input type="text" /></div>
+						<div class="infos"><span class="field">联系邮箱：</span><input type="text" /></div>
+					</div>
+				</div>
+				
+				<div class="verify_area mt10">
+					<div class="title">2.机构介绍</div>
+					<div class="content">
+						 <a href="javascript:void(0);" class="wds-btn wds-btn-primary ">点击上传详细介绍</a><span class="explain">（文本介绍(word/text/wps)不得带有联系方式，比如：QQ、手机、邮箱、微信等）</span>
+					</div>
+				</div>
+				<div class="verify_area mt10">
+					<div class="title">5.荣誉证书<span class="explain">（荣誉证书、在职证明等个人资料）</span></div>
+					<div class="content">
+						<div class="infos upload"><span class="field">荣誉证书：</span>
+							<div class="idcard_up">
+								<input type="text" readonly /><button class="wds-btn wds-btn-primary upload">上传</button>
+								<div class="showbox"></div>				
+							</div>
+						</div>
+						<div class="new2" id="new2"></div>
+						<div class="add_card"><a href="javascript:void(0);" onclick="_add_upload('new2')">+添加证书</a></div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom-hide mt10">
+				<div class="hidein"><a href="javascript:void(0);" onclick="_hidein();">展开<i class="icon-hidein"></i></a></div>
+				<span class="hide_title bold">-----完善信息便于用户更好地了解您！</span>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="bottom_bar"><input type="checkbox">我已阅读并同意<a href="#">《万点声认证管理条例》</a><button class="wds-btn wds-btn-primary radius" >提交认证资料</button></div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		reheight();
+
+		$('.catebox a').click(function(){
+			
+			return false;
+		});
+
+	});
+	function reheight(){
+		$('.necess .left').height($('.necess .right').height());
+		$('.necess .left .title').css('margin-top',($('.necess .right').height()-$('.necess .left .title').height())/2)
+		$('.necess .left .markline').height($('.necess .right').height());
+		
+		$('.unnecess .left').height($('.unnecess .right').height());
+		$('.unnecess .left .markline').height($('.unnecess .right').height());
+		$('.unnecess .left .title').css('margin-top',($('.unnecess .right').height()-$('.unnecess .left .title').height())/2)
+	}
+	function _hidein(){
+		if($('.bottom-hide a').html().indexOf('收起') == -1){
+			$('.unnecess').removeClass('hide');
+			$('.bottom-hide a').html('收起<i class="icon-showout"></i>');
+		}else{
+			$('.unnecess').addClass('hide');
+			$('.bottom-hide a').html('展开<i class="icon-hidein"></i>');
+		}
+		reheight();
+	}
+	function _add_upload(id){
+		$('#'+id).append(
+			$('<div class="infos upload">').append([
+				$('<div class="idcard_up" style="margin-left:95px;">').append([
+					$('<input type="text" readonly>'),
+					$('<button class="wds-btn wds-btn-primary upload">').append('上传'),
+					$('<div class="showbox">')
+				]),
+				$('<a class="remove" href="javascript:void(0);">')
+			])[0]
+		);
+		reheight();
+	}
+	function _add_award(id){
+		$('#'+id).append('<input type="text" >');
+	}
+	$('.remove').live("click",function(){
+		$(this).parent().remove();
+		reheight();
+	});
+</script>
+
+<!-- 页脚 -->
+<footer class="copyright area">
+	<div class="copy_link">
+		<a target="_blank" href="aboutus.html">关于本站</a>
+		<a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+		<a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+		<a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+		<a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+		<a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+		<!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+	</div>
+	<div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+	<div class="copy_number">
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<span id="cnzz_stat_icon_1253060728">
+	<a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+	<img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+	<div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+	<div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+</footer>
+</body>
+</html>

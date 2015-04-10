@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>专家介绍修改 - 万点声在线咨询</title>
+<link rel="stylesheet" href="../css/base.css" />
+<link rel="stylesheet" href="../css/common2.css" />
+<link rel="stylesheet" href="../css/pure-release-0.5.0/grids-min.css"/>
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="../js/user.js"></script>
+<script type="text/javascript" src="../js/city.js"></script>
+<link rel="stylesheet" href="../css/user.css" />
+<style>
+    body{padding-top: 67px;}
+</style>
+</head>
+
+
+<body>
+<div class='top'>
+    <div class='logoBar'>
+        <div class='pure-g logo-pure'>
+                   <div class=' pure-u-1-2'><a href='/'><img src="../css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+                   </div>
+                   <div id='login_message' class='pure-u-1-2'>
+                    <div class="navtopbar">
+                <ul class='navtop'>
+                    <li><a href='/'>首页</a></li>
+                    <li><a href='#'>昵称</a></li>
+                    <li class="nav-has-child"><a href='#'>我的消息</a>
+                        <ul class="nav-menu">
+                            <li><a class="msg3" href="#">新答案</a></li>
+                            <li><a class="msg8" href="#">站内消息</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href='#'>预约订单</a></li>
+                    <li class="nav-has-child"><a href='#'>设置</a>
+                        <ul class="nav-menu ">
+                            <li><a class="news_subnav" href="#">账号设置</a></li>
+                            <li><a href="#">我的点币</a></li>
+                            <li><a href="#">个人认证</a></li>
+                            <li><a href="#">退出</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </div>
+                <script>
+                    $('.nav-has-child').mouseover(function(){
+                        console.log(this);
+                        $(this).find('.nav-menu').show();
+                    });
+                    $('.nav-has-child').mouseleave(function(){
+                        console.log(this);
+                        $(this).find('.nav-menu').hide();
+                    });
+                </script>
+                      </div>
+        </div>
+        </div>
+</div>
+<div class='container'>
+    <div class='navBar bfff'>
+        <ul>
+            	<li><a href="exp_intr.html" class='current_att'>专家介绍</a></li>
+                <li><a href="#">服务介绍</a></li>
+            	<li><a href="bgMod.html">封面图</a></li>
+             <!--   <li><a href="#">自定义封面</a></li>-->
+        </ul>
+            <a href='help.html' class='help'>帮助</a>
+    </div>
+    <div class='user_mainbody'>
+    	<div class='side_left'>
+        		<div class='person person_modi'>
+                	<ul>
+                    	<li>
+                        	<span>姓名：</span><input type='text' name='name' />
+                        </li>
+                        <li>
+                        	<span>别名：</span><input type='text' name='byname' />
+                        </li>
+                        <li>
+                        	<span>国籍：</span><input type='text' name='nationality' />
+                        </li>
+                        <li>
+                        	<span>名族：</span><input type='text' name='nation' />
+                        </li>
+                        <li>
+                        	<span>现居住地：</span><select class='pr' id='pr'></select>省<select class='cit' id='cit'></select>市
+                        </li>
+                        <li>
+                        	<span>出生年份：</span><select class='biryear' name='by'></select>年<select class='birmonth' name='bm'></select>月
+                        </li>
+                        <li>
+                        	<span>毕业院校：</span><input type='text' name='grdschool' class='grds'/>
+                        </li>
+                        <li>
+                        	<span>工作单位：</span><input type='text' name='workcomp' class='wrkc'/>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class='user_photo'>
+                	<img />
+                    <a href="#">点击上传图片</a>
+                    <input class='photoname' placeholder="点击更改图集名称"/>
+                </div>
+        </div>
+        <div class='side_right bfff p10'>
+        	<div>
+            	<div><input type='text' name='title' value='擅长' class='title'/></div>
+                <div><textarea name='context' class='context' placeholder="添加擅长"></textarea>
+                </div>
+            </div>
+            <div>
+            	<div><input type='text' name='title_2' value='经历经验' class='title'/></div>
+                <div><textarea name='context2' class='context' placeholder="添加经历经验"></textarea>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <div class='side_bottom'><span class='pre-view'><span class='pre-view_icon'></span>预览</span><a class='cancel'>取消</a><an class='ok'>保存</a></div>
+</div>
+<div class="copyright w1002 bc">
+    <div class="copy_link">
+        <a target="_blank" href="aboutus.html">关于本站</a>
+        <a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+        <a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+        <a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+        <a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+        <a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+        <!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+    </div>
+    <div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+    <div class="copy_number">
+    <script type="text/javascript">
+    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <span id="cnzz_stat_icon_1253060728">
+    <a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+    <img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+    <div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+    <div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+</div>
+<script type='text/javascript'>
+// jQuery(document).ready(function($) {
+_loadProvince('pr','cit');
+$('#pr').change(function(){
+    _loadProvinceName('pr','cit');
+});
+var by='';
+for(var i=2015;i>1915;i--){
+    by+='<option value='+i+'>'+i+'</option>';   
+}
+var bm='';
+for(var i=1;i<=12;i++){
+    bm+='<option value='+i+'>'+i+'</option>';   
+}
+$('.biryear').html(by);
+$('.birmonth').html(bm);
+// });
+</script>
+</body>
+</html>

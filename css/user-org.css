@@ -1,0 +1,145 @@
+@charset "utf-8";
+.orgmain.usermain .left {
+  width: 260px;
+}
+.orgmain.usermain .left .orgimg img,
+.orgmain.usermain .left .orgimg .picbox {
+  margin-top: 1.5px;
+  margin-left: 1.5px;
+  width: 254px;
+  height: 346px;
+}
+.orgmain.usermain .left .orgimg img li,
+.orgmain.usermain .left .orgimg .picbox li {
+  width: 254px;
+  height: 346px;
+}
+.orgmain.usermain .left .orgimg img img,
+.orgmain.usermain .left .orgimg .picbox img {
+  width: 254px;
+  height: 346px;
+}
+.orgmain.usermain .left .orgimg img .next,
+.orgmain.usermain .left .orgimg .picbox .next,
+.orgmain.usermain .left .orgimg img .last,
+.orgmain.usermain .left .orgimg .picbox .last {
+  top: 153px;
+}
+.orgmain.usermain .left .orgimg .imgname {
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}
+.orgmain.usermain .right {
+  width: 722px;
+}
+.orgmain.usermain .right .orgintr {
+  min-height: 700px;
+}
+.usermain.group .left {
+  width: 140px;
+}
+.usermain.group .right {
+  width: 842px;
+}
+.expert_cate li a {
+  display: block;
+  height: 38px;
+  background: #f0f0f0;
+  border: 1px #dcdcdc solid;
+  color: #666;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 38px;
+  padding-left: 20px;
+}
+.expert_cate li.current a,
+.expert_cate li:hover a {
+  color: #2d7bcd;
+}
+.expert_cate .cate-child {
+  background: #fff;
+  border: 1px #dcdcdc solid;
+  padding: 10px 0;
+}
+.expert_cate .cate-child li a {
+  color: #666;
+  display: inline;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: normal;
+  background: transparent;
+  padding-left: 25px;
+}
+.expert_cate .cate-child li a:hover {
+  color: #2d7bcd;
+}
+.expert_cate .cate-child li.current_child a {
+  color: #2d7bcd;
+}
+.expcard {
+  font-size: 12px;
+  color: #666;
+  padding: 10px;
+  margin-top: 10px;
+}
+.expcard .imgbox {
+  width: 100px;
+  height: 100px;
+  border: 1px #c8c8c8 solid;
+  float: left;
+  margin-left: 20px;
+}
+.expcard .namespace {
+  float: left;
+  line-height: 24px;
+  padding: 10px;
+  width: 130px;
+  height: 80px;
+}
+.expcard .namespace .name {
+  font-size: 14px;
+  color: #2d7bcd;
+  font-weight: bold;
+}
+.expcard .namespace .name a {
+  text-decoration: none;
+}
+.expcard .namespace .pro {
+  font-size: 14px;
+}
+.expcard .namespace .workage {
+  font-size: 14px;
+}
+.expcard .master {
+  width: 340px;
+  height: 80px;
+  padding: 10px;
+  line-height: 20px;
+  float: left;
+}
+.expcard .btn-consult {
+  height: 80px;
+  padding: 10px;
+  float: right;
+  margin-right: 20px;
+}
+.expcard .btn-consult a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  background: #2d7bcd;
+  text-decoration: none;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.orgimg {
+  border: 1px #dcdcdc solid;
+}
+.orgimg img {
+  width: 260px;
+}

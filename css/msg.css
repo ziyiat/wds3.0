@@ -1,0 +1,162 @@
+@charset "utf-8";
+.bfff {
+  background: #fff;
+}
+.in_title {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 36px;
+  margin-bottom: 10px;
+  padding: 0 20px;
+  background: #fff;
+}
+.msgpage {
+  font-size: 14px;
+  font-family: 'SimSun';
+}
+.msgpage .left {
+  width: 180px;
+}
+.msgpage .mid {
+  width: 602px;
+  float: left;
+  margin-left: 10px;
+}
+.msgpage .right {
+  width: 200px;
+  margin-left: 10px;
+}
+.msgpage .left_nav {
+  background: #fff;
+  padding: 10px;
+}
+.msgpage .left_nav li {
+  padding: 10px;
+}
+.msgpage .left_nav li a {
+  text-decoration: none;
+  color: #666;
+}
+.msgpage .left_nav li.current a,
+.msgpage .left_nav li:hover a {
+  color: #2d7bcd;
+}
+.msgpage .left_nav .num {
+  float: right;
+  color: #ff0000;
+}
+.messages {
+  padding-bottom: 50px;
+}
+.messages .msg_card {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #dcdcdc;
+  overflow: auto;
+}
+.messages .msg_card .menu {
+  position: absolute;
+  height: 10px;
+  right: 10px;
+  text-align: right;
+  cursor: pointer;
+}
+.messages .msg_card .menu i {
+  margin-top: -10px;
+}
+.messages .msg_card .menu .child {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background: #fff;
+  border: 1px solid #dcdcdc;
+  line-height: 30px;
+  text-align: left;
+  width: 80px;
+}
+.messages .msg_card .menu .child a {
+  margin-left: 10px;
+  color: #666;
+  text-decoration: none;
+}
+.messages .msg_card .menu .child a:hover {
+  color: #2d7bcd;
+}
+.messages .msg_card .msg_img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.messages .msg_card .msg_img img {
+  width: 100%;
+  height: 100%;
+}
+.messages .msg_card .msg_main {
+  width: 512px;
+  float: left;
+  margin-bottom: 10px;
+}
+.messages .msg_card .msg_main a {
+  color: #2d7bcd;
+}
+.messages .msg_card .msg_main .msg_title {
+  font-size: 14px;
+  color: #666;
+  line-height: 1em;
+  margin: 6px 0;
+}
+.messages .msg_card .msg_main .msg_cont {
+  line-height: 1em;
+  font-size: 12px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-overflow: ellipsis;
+}
+.messages .msg_card .msg_main .msg_dtime {
+  line-height: 1em;
+  font-size: 12px;
+  color: #999;
+  text-align: right;
+}
+.messages .msg_card .msg_main .msg_dtime span {
+  margin-left: 20px;
+}
+.messages .msg_card.msg3 .msg_dtime,
+.messages .msg_card.msg4 .msg_dtime {
+  margin-top: 10px;
+}
+.messages .msg_card.msg3 .msg_cont:hover,
+.messages .msg_card.msg4 .msg_cont:hover {
+  cursor: pointer;
+  color: #2d7bcd;
+}
+.messages .msg_card.msg5 .msg_cont,
+.messages .msg_card.msg6 .msg_cont {
+  padding-left: .5em;
+}
+.messages .msg_card.msg5 .msg_dtime,
+.messages .msg_card.msg6 .msg_dtime {
+  margin-top: 10px;
+}
+.messages .msg_card.msg6 .msg_dtime {
+  margin-top: 10px;
+}
+.messages .msg_card.msg6 .msg_cont {
+  white-space: normal;
+  line-height: 20px;
+}
+.helpbox {
+  font-size: 12px;
+}
+.helpbox li {
+  margin: 10px 0;
+}
+.helpbox li p {
+  display: inline;
+  padding-left: 2em;
+}

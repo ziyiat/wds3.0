@@ -1,0 +1,177 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>咨询我的 - 万点声在线咨询</title>
+
+
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<script src="../js/user.js"></script>
+<link rel="stylesheet" href="../css/user.css" />
+<style>
+.user_consult_left{
+	width: auto;
+}
+</style>
+</head>
+	
+<body><div class='container'>
+<header class="userheader">
+<div class="bigbox">
+<div class='bgg'>
+	<!-- LEFT -->
+	<div class="userNav">
+		<ul>
+			<li><a href="../index.html">返回首页</a></li>
+			<li><a href="">个人中心</a></li>
+			<li><a href="">我的消息</a></li>
+			<li><a href="">预约订单</a></li>
+			<li><a href="">我的点币</a></li>
+			<li><a href="">doc首页</a></li>
+			<li><a href="">账户设置</a></li>
+			<li><a href="">退出帐号</a></li>		
+		</ul>
+	</div>
+		
+		<!-- 中 -->
+	<div class="userInfo">
+		<div class='userInfo_main'>
+			<div class="user_img"><img src="../images/23.png"/></div>
+			<div class="user_name">张国荣</div>
+			<div class="expertiocn">
+            	    	    <a href="#" class="expert_medal_box">
+                   			 <span class="expert_medal medal_lawyer" title="律师"></span>
+             		    </a>
+             		    <a href="#" class="cid_iocn">
+              			 <span class="lv_num l_v" title="实名认证"></span>
+               		    </a>
+            		    <a href="#" class="lv_ico color1">
+                  			 <span class="lv_num l10" title="等级10"></span>
+            		    </a>
+          			</div>
+			<div class="user_pro">香港歌手</div>
+		</div>
+	</div>
+	<!-- RIGHT -->	
+	<div class="edit">
+	     <div class='host'><!--主态显示-->
+				<div class="edit_btn"><span class='edit_icon'></span></div>
+				<div class="user_edit">
+					<ul>
+						<li style="display: none;" index='1'>封面图</li>
+						<li style="display: none;" index='2'>专家介绍</li>
+						<li style="display: none;" index='3'>服务介绍</li>
+					</ul>
+				</div>
+	     </div>
+    	     <div class='logfalse logbar'><!--未登陆显示-->
+        		 <a href="#">登陆</a><a href="../reg.html">注册</a>
+               </div>
+	</div>
+	<div class='user_follow'>
+               <ul>
+	        <li>99999</li>
+	        <li>99999</li>
+	        <li>99999</li>
+	        <li>回答数</li>
+	        <li>关注我的</li>
+	        <li>我关注的</li>
+              </ul>
+	</div>
+</div>
+</div>
+
+<div class='nav_panel'>
+	<div class="nav_title"><span>咨询我的</span></div>
+	<div class="nav_icon"><div class='nav_btn'><span></span><span></span><span></span><span></span></div></div>
+	<nav>
+		<ul>
+			<li><a href="user.html" >专家介绍</a></li>
+			<li><a href="preconsult.html">咨询预约</a></li>
+	 		<li><a href='user_consult_online.html'>网上咨询</a></li>
+	             	<li><a href='user_consult_phone.html'>电话咨询</a></li>
+	              	<li><a href='user_consult_face.html'>面谈咨询</a></li>
+			<li><a href="service.html">服务介绍</a></li>
+			<li><a href="eval.html">评价</a></li>
+			<li><a href="article.html">文章</a></li>
+			<li><a href='#'>预约咨询</a></li>
+			<li><a href='#'>机构成员</a></li>
+			<li><a href='#'>机构介绍</a></li>
+		</ul>
+	</nav>
+	<div class='clear' style='clear:both;'></div>
+</div>
+
+</header>
+	<script>
+	$('.nav_icon').toggle(
+		function(){
+			$('nav').addClass('show');
+		},
+		function(){
+			$('nav').removeClass('show');
+		}
+	);
+	$('nav a').click(function(){
+		$('nav').removeClass('show');
+		var url = this.href;
+		setTimeout(function(){location.href=url},1500);
+		return false;
+	});
+	</script>
+
+<div class="user_main">
+	<div class="side_left consult_left">
+		<ul>
+				<a href='' class='btn-m btn-consult'>网上咨询</a>
+				<a href='' class='btn-m btn-consult'>电话咨询</a>
+				<a href='' class='btn-m btn-consult'>面谈咨询</a>
+		</ul>
+	</div>
+	<div class="side_right consult_right">
+		<div class='block'>全部网上咨询	(<span style='color:#ff0000' class='consult_count'>22</span>)</div>
+
+		<ul class="praisemainbox">
+			<li class="praisemain block">
+				<div class="praise_mainbox">
+					<div class="praise_name">老湾***</div>
+					<div class="praise_main">
+						<div><span class='consult_title'>硬币的设立目的本来是用于其他的</span><a href='javascript:void(0);' class='c_more'>查看详情</a></div>
+						<div><span class='consult_details'>比如判定一个帐号的信誉值，然后进行发表或参与作品的排名调整。 由于初期鼓励大家使用</span><a href='javascript:void(0);' class='c_hidden'>收起</a></div>
+					</div>
+				</div>
+				<div class="praise_time"><div class="praise_show"><span class="c_over">已完成</span></div>2014/09/22 10:04</div>
+			</li>
+           		<li class="praisemain">
+				<div class="praise_mainbox">
+					<div class="praise_name">某*****</div>
+					<div class="praise_main">硬币的</div>
+				</div>
+				<div class="praise_time"><div class="praise_show"><span class="c_ing">咨询中</span></div>2014/09/22 10:04</div>
+			</li>
+            		<li class="praisemain">
+				<div class="praise_mainbox">
+					<div class="praise_name">某*****</div>
+					<div class="praise_main">硬币阿斯达的</div>
+				</div>
+				<div class="praise_time"><div class="praise_show"><span class="c_ing">咨询中</span></div>2014/09/22 10:04</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+				<script>
+					//查看详情与收起
+						$('.c_more').click(function(){$('.c_hidden').show();$(this).hide();$('.consult_details').show();});
+						$('.c_hidden').click(function(){$('.c_more').show();$(this).hide();$('.consult_details').hide();});
+					</script>
+</body>
+</html>

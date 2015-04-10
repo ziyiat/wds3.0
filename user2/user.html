@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>用户中心</title>
+<meta http-equiv="X-UA-Compatible" content="eadg" />
+<link rel='stylesheet' href='../css/base.css' />
+<link rel='stylesheet' href='../css/common2.css' />
+<link rel='stylesheet' href='../css/user-common.css' />
+<link rel='stylesheet' href='../css/user-index.css' />
+<link rel='stylesheet' href='../css/rollpic.css' />
+<link rel='stylesheet' href='../css/picbox.css' />
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/user-common.js"></script>
+<script type="text/javascript" src="../js/picbox.js"></script>
+</head>
+<body>
+<!-- 顶部 -->
+<div class='top'>
+	<div class='logoBar'>
+	    <div class='pure-g logo-pure'>
+        	       <div class=' pure-u-1-2'><a href='/'><img src="../css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+        	       </div>
+	       <div id='login_message' class='pure-u-1-2'>
+	       	<div class="navtopbar">
+			<ul class='navtop'>
+				<li><a href='/'>首页</a></li>
+				<li><a href='#'>昵称</a></li>
+				<li class="nav-has-child"><a href='#'>我的消息</a>
+					<ul class="nav-menu">
+						<li><a class="msg3" href="#">新答案</a></li>
+						<li><a class="msg8" href="#">站内消息</a></li>
+					</ul>
+
+					</li>
+					<li><a href='#'>预约订单</a></li>
+					<li class="nav-has-child"><a href='#'>设置</a>
+						<ul class="nav-menu ">
+							<li><a class="news_subnav" href="#">账号设置</a></li>
+							<li><a href="#">我的点币</a></li>
+							<li><a href="#">个人认证</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+
+					</li>
+				</ul>
+			</div>
+			<script>
+					$('.nav-has-child').mouseover(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').show();
+					});
+					$('.nav-has-child').mouseleave(function(){
+						// console.log(this);
+						$(this).find('.nav-menu').hide();
+					});
+			</script>
+	                  </div>
+	    </div>
+    </div>
+</div>
+<div class="container">
+	<div class="headerbg">
+		<div class="header">
+			<div class="userinfo">
+				<div class="avatar">
+					<img width="140px" height="140px" src="../css/img/default_b.png">
+				</div>
+				<div class="userinfomain">
+					<p>张国荣</p>
+					<p>
+						    <a href="#" class="expert_medal_box">
+			                   			 <span class="expert_medal medal_lawyer" title="律师"></span>
+			             		    </a>
+			             		    <a href="#" class="cid_iocn">
+			              			 <span class="lv_num l_v" title="实名认证"></span>
+			               		    </a>
+			            			    <a href="#" class="lv_ico color1">
+			                  			 <span class="lv_num l10" title="等级10"></span>
+			            		  	    </a>	
+
+					</p>
+					<p><span class="lwords userpro">介绍介绍介绍介绍介绍</span></p>
+				</div>
+			</div>
+			<div class="userfollow">
+				<div class="left"><p>999999</p><p>关注我的</p></div>
+				<div class="left"><p>999999</p><p>我关注的</p></div>
+			</div>
+		</div>
+	</div>
+	<nav class="navi block w1002">
+		<ul id="example-one">
+			<li><a href="user.html">专家介绍</a></li>
+			<li><a href="consultme.html">已完成咨询</a></li>
+			<li><a href="consult.html">咨询详情</a></li>
+			<li><a href="service.html">服务介绍</a></li>
+			<li><a href="article.html">刊文</a></li>
+			<li><a href="eval.html">评价</a></li>
+		</ul>
+		<div class="clear"></div>
+	</nav>
+	<div class="usermain">
+		<div class="left">
+			<div class="consult userdiv">
+				<a href="javascript:void(0);">网上咨询</a>
+				<a href="javascript:void(0);">电话咨询</a>
+				<a href="javascript:void(0);">面谈咨询</a>
+			</div>
+			<div class="mydata_praisebox userdiv">
+				<ul class="mydata_praise">
+	                <li><span class="mydata_praisetitle">回答数：</span><span class="praiseall_number">100</span></li>
+	                <li><span class="mydata_praisetitle">好评率：</span><span class="praiseall_number best_rate">70%</span></li>
+	                <li><span class="mydata_praisetitle">好评：</span><span class="praise_percent"><i class="praise_best" style='width:calc(70/100*180px);'></i></span><span class="best_num">70</span></li>
+	                <li><span class="mydata_praisetitle">一般：</span><span class="praise_percent"><i class="praise_well" style='width:calc(20/100*180px);'></i></span><span class="well_num">20</span></li>
+	                <li><span class="mydata_praisetitle">差：</span><span class="praise_percent"><i class="praise_bad" style='width:calc(10/100*180px);'></i></span><span class="bad_num">10</span></li>
+	            </ul>
+			</div>
+			<div class="followme userdiv">
+				<a href="javascript:void(0);">+关注</a>
+			</div>
+			<div class="articlebox userdiv">
+				<div class="div_title">关注人刊文</div>
+				<ul class='list'>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题文标题文标题文</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示个汉字</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示个汉个汉</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示个汉个汉</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示个汉个汉</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="right">
+			<div class="information">
+				<div class="user_title">擅长</div>
+				<div class="user_context">
+					宋体	SimSun
+					黑体	SimHei
+					微软雅黑	Microsoft YaHei
+					微软正黑体	Microsoft JhengHei
+					新宋体	NSimSun
+					新细明体	PMingLiU
+					细明体	MingLiU
+					标楷体	DFKai-SB
+					仿宋	FangSong
+					楷体	KaiTi
+					仿宋_GB2312	FangSong_GB2312
+					楷体_GB2312	KaiTi_GB2312
+					宋体	SimSun
+					黑体	SimHei
+					微软雅黑	Microsoft YaHei
+					微软正黑体	Microsoft JhengHei
+					新宋体	NSimSun
+					新细明体	PMingLiU
+					细明体	MingLiU
+					标楷体	DFKai-SB
+					仿宋	FangSong
+					楷体	KaiTi
+					仿宋_GB2312	FangSong_GB2312
+					楷体_GB2312	KaiTi_GB2312
+				</div>
+			</div>
+			<div class="information">
+				<div class="user_title">证书证明</div>
+				<div class="user_context pic">
+					<div class="picbox" id="mypicbox">
+						<a class="last transition roll nopic" href="#"><</a>
+						<ul class="certbox rollpic transition" id="rollpic">
+							<li>
+								<a href="../images/zs.jpg" rel="lightbox-group" title="资质证书">
+									<img src="../images/zs.jpg"/>
+								</a>
+								<span class="certname">资质证书</span>
+							</li>
+							<li><a href="../images/zs.jpg" rel="lightbox-group" title="在职证明"><img src="../images/zs.jpg"/></a><span class="certname">在职证明</span></li>
+							<li><a href="../images/zs.jpg" rel="lightbox-group" title="在职证明"><img src="../images/zs.jpg"/></a><span class="certname">在职证明</span></li>
+							<li><a href="../images/3.jpg" rel="lightbox-group"  title="资质证书"><img src="../images/3.jpg"/></a><span class="certname">资质证书</span></li><!-- 
+							<li><a href="../images/zs.jpg" rel="lightbox-group" title="资质证书"><img src="../images/zs.jpg"/></a><span class="certname">资质证书</span></li>
+							<li><a href="../images/3.jpg" rel="lightbox-group" title="资质证书"><img src="../images/3.jpg"/></a><span class="certname">资质证书</span></li> -->
+						</ul>
+						<a class="next transition roll" href="#">></a>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="information">
+				<div class="user_title">基本信息</div>
+				<div class="user_context">
+					<ul class="user_info">
+						<li>
+							<span class="info_key">所在地：</span><span class="info_value">省/市 市/区</span>
+							<span class="info_key">资质证书编号：</span><span class="info_value">123456123456</span>
+						</li>
+						<li>
+							<span class="info_key">工龄：</span><span class="info_value">12年</span>
+							<span class="info_key">所属机构：</span><span class="info_value">按认证机构</span>
+						</li>
+						<li><span class="info_key">办公地址：</span><span class="info_value">中国北京市海淀区</span></li>
+					</ul>
+				</div>
+			</div>
+			<div class="information">
+				<div class="user_title">曾获殊荣</div>
+				<div class="user_context"></div>
+			</div>
+			<div class="information">
+				<div class="user_title">工作成就</div>
+				<div class="user_context">
+					<p>1</p>
+					<p>2</p>
+					<p>3</p>
+					<p class="hidein"><a href="javascript:void(0);">收起</a></p>
+				</div>
+			</div>
+			<div class="information">
+				<div class="user_title">详细介绍</div>
+				<div class="user_context">www.zhihu.com/question... 
+					 - 百度快照 - 91%好评
+					个人资料的英文_个人资料翻译_个人资料英语怎么说_海词词典
+					海词词典,最权威的学习词典,专业出版个人资料的英文,个人资料翻译,个人资料英语怎么说等详细讲解。海词词典:学习变容易,记忆很深刻。
+					dict.cn/个人资料 
+					 - 百度快照 - 83%好评
+					英文个人资料_百度文库
+					2015年2月1日 - 在线互动式文档分享平台,在这里,您可以和千万网友分享自己手中的文档,全文阅读其他用户的文档,同时,也可以利用分享文档获取的积分下载文档
+					wenku.baidu.com/album/... 
+					<p class="hidein"><a href="javascirp:void(0);">展开</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+    // var picwidth = parseInt($('.picbox').css('width'));
+    var showimg = 3;//展示数量
+    var picwidth = 220;
+    var piccount = $('.rollpic li').length;
+    var nowindex = 1;
+    var mr = parseInt($('.rollpic li').css("margin-right"));
+    picwidth += mr;//实际移动时要加上右偏移
+    // console.log(piccount);
+    if(piccount<=showimg){
+    	$('.last').addClass('nopic');
+    	$('.next').addClass('nopic');
+    }
+    $('.next').click(function(event) {
+        if(checknowpic(event.target)){
+            nowindex++;
+            var nowpicleft = (nowindex-1)*picwidth*-1;
+            $('.rollpic').css('left',nowpicleft);
+            updateroll(nowindex);
+        }
+        
+        return false;
+    });
+    $('.last').click(function(event) {
+        if(checknowpic(event.target)){
+             nowindex--;
+             var nowpicleft = (nowindex-1)*picwidth*-1;
+             $('.rollpic').css('left',nowpicleft);
+             updateroll(nowindex);
+        }
+        return false;
+    });
+    function checknowpic(obj){
+        var nowpicleft = parseInt($('.rollpic').css('left'));
+        /* Act on the event */
+        if($(obj).attr('class').indexOf('nopic')>-1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    function updateroll(now){
+        var nowpicleft = parseInt($('.rollpic').css('left'));
+        console.log(now);
+            if(now == piccount - showimg + 1){
+                $('.next').addClass('nopic');
+            }else{
+                $('.next').removeClass('nopic');
+            }
+            if(now == 1){
+                $('.last').addClass('nopic');
+            }else{
+                $('.last').removeClass('nopic');
+            }
+    }
+    $('.rollpic li').click(function(){
+    	$('#imgLayer').show();
+    });
+
+
+    // 弹出层
+    $('.btn-layer-close').click(function(){
+    	$('#imgLayer').hide();
+    });
+</script>
+<!-- 页脚 -->
+<footer class="copyright w1002">
+	<div class="copy_link">
+		<a target="_blank" href="aboutus.html">关于本站</a>
+		<a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+		<a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+		<a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+		<a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+		<a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+		<!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+	</div>
+	<div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+	<div class="copy_number">
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<span id="cnzz_stat_icon_1253060728">
+	<a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+	<img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+	<div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+	<div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+</footer>
+</body>
+</html>

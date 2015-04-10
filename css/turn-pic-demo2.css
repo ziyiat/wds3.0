@@ -1,0 +1,29 @@
+@charset "utf8";
+.topvebanner {
+  width: 1002px;
+  height: 300px;
+}
+#myjQuery {
+  background-color: #fff;
+  width: 1002px;
+  height: 300px;
+  position: relative;
+}
+#myjQueryContent {
+  width: 1002px;
+  height: 300px;
+}
+#myjQueryContent div {
+  position: absolute;
+  height: 299px;
+  top: 0px;
+  left: 1px;
+  width: 998px;
+}
+#myjQueryContent .smask {
+  z-index: -1;
+}
+#myjQueryContent img {
+  width: 1000px;
+  height: 298px;
+}

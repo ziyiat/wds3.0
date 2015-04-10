@@ -1,0 +1,583 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" href="css/pure-release-0.5.0/buttons-min.css"/>
+<link rel="stylesheet" href="css/pure-release-0.5.0/grids-min.css"/>
+
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<!--
+<link rel="stylesheet" href="css/pure-release-0.5.0/base-min.css"/>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">-->
+<link rel="stylesheet" type="text/css" href="css/common2.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+
+
+</head>
+
+<body>
+<!-- 顶部 -->
+<div class='top'>
+	<div class='logoBar'>
+	    <div class='pure-g logo-pure'>
+        	       <div class=' pure-u-1-2'><a href='/'><img src="css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+        	       </div>
+	       	       <div id='login_message' class='pure-u-1-2'>
+	       	       	<div class="navtopbar">
+	       	       	<!--
+				<ul class='navtop'>
+					<li><a href='/'>首页</a></li>
+					<li><a href='#'>昵称</a></li>
+					<li class="nav-has-child"><a href='#'>我的消息</a>
+						<ul class="nav-menu">
+							<li><a class="msg3" href="#">新答案</a></li>
+							<li><a class="msg8" href="#">站内消息</a></li>
+						</ul>
+
+					</li>
+					<li><a href='#'>预约订单</a></li>
+					<li class="nav-has-child"><a href='#'>设置</a>
+						<ul class="nav-menu ">
+							<li><a class="news_subnav" href="#">账号设置</a></li>
+							<li><a href="#">我的点币</a></li>
+							<li><a href="#">个人认证</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+
+					</li>
+				</ul>
+				-->
+			<!-- 未登陆 -->
+				<ul class="navtop">
+					<li><a href="/">首页</a></li>
+					<li>
+						<a href="javascript:void(0)" class="lg">登录</a>
+						<div class="mini_loginbox bfff">
+							<form class="loginform" method="post">
+								<div class="inputbox username_input">
+									<input id="username" class="input username" placeholder="输入邮箱或手机号" type="text">
+								</div>
+								<div class="inputbox password_input">
+									<input id="password" class="input password" placeholder="账号密码" type="password">			
+								</div>
+								<div class="logopt">
+									<input class="subbtn" value="登　录" type="submit">
+									<label  class="checkbox">
+										<input type="checkbox">自动登录					
+									</label>			
+									<a href="/forget" class="forget">忘记密码？</a>
+									<div class="clear"></div>					
+								</div> 
+								
+							</form>
+						</div>
+					</li>
+					<li><a href="/register">免费注册</a></li>
+				</ul>
+			</div>
+				<script>
+					$('.nav-has-child').mouseover(function(){
+						console.log(this);
+						$(this).find('.nav-menu').show();
+					});
+					$('.nav-has-child').mouseleave(function(){
+						console.log(this);
+						$(this).find('.nav-menu').hide();
+					});
+				</script>
+	                  </div>
+	    </div>
+        </div>
+</div>
+<!--图片-->
+<div class="expert_class" >
+                                    <a href="class.html">心理咨询</a>
+                                    <a href="#">律师</a>
+                                    <a href="#">西医</a>
+                                    <a href="#">互联网</a>
+                                    <a href="#">中学教育</a>                                 
+                                    <a href="#">翻译</a>
+                                    <a href="#">电子商务</a>
+                                    <a href="#">孕妇育儿</a>
+                                    <a href="#">中医</a>
+                                    <a href="#">专业培训</a>
+                                    <a href="#" >传媒设计</a>
+                                    <a href="#">商业咨询</a>
+                                    <a href="#">文学艺术</a>
+                                    <a href="#">文玩鉴赏</a>                                    
+                                    <a href="#">宠物</a>
+                                    <a href="#">动漫游戏</a>
+                                    <a href="#">化妆造型</a>					
+</div>
+<div class='index-showimgbox'>
+		<ul class="newnav">
+			<li>
+				<ul class="consult-btn">
+					<li><a href='' class='pure-button pure-button-foo'>网上咨询</a></li>
+					<li><a href='' class='pure-button pure-button-foo'>电话咨询</a></li>
+					<li><a href='' class='pure-button pure-button-foo'>面谈预约</a></li>
+				</ul>
+			</li>
+			<li>
+				<div class="search_panel">
+					<input type='text' placeholder="请输入您要搜素的关键词" class='searchbox' name='keywords'/><button href="" class="pure-button pure-button-foo btn-search">搜索</button>
+				</div>
+			</li>
+			
+		</ul>
+</div>
+			
+
+
+
+ 
+<!--行业专家部分 -->
+<div class='expert_part'>
+	<div class='part_title bc'>热门专家<span><span class='part_tips'>按咨询数和发文数</span><a href="reg_exp.html" class='more'>专家注册</a></span></div>
+	<div class='part_main'>
+		<div class='context'>
+			<div class='idcard'>
+				<div class='eimg'>
+					<a href="#"><img src='css/img/verifyback.png' class="eimg" /></a>
+					<div class='elyer'>
+						<span>
+							擅长：专家擅长的内容，鼠标经过头像显示，文字从下往上摆列，最高离顶部50px，在文字最多时加3个点...底色透明60
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>
+						擅长：专家擅长的内容，鼠标经过头像显示，文字从下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+			<div class='idcard'>
+				
+				<div class='eimg'>
+					<img src='css/img/verifyback.png' class="eimg" />
+					<div class='elyer'>
+						<span>本来我这个博客，内容都是通过ajax-->PHP-->数据库-->返回html/json显示在html中。但是今天我发现，这样得到的博文对应的地址的源码没下
+						</span>
+					</div>
+				</div>
+				<p class='ename'>专家名字</p>
+				<p class='emaster'>职称，头衔</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 行业机构 -->
+<div class='company_part'>
+	<div class='part_title'>热门机构<span><span class='part_tips'>按咨询数和发文数</span><a href="reg_com.html" class='more'>机构注册</a></span></div>
+	<div class='part_main'>
+		<div class='context'>
+			<div class='compcard'><a href="#"><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></a></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			<div class='compcard'><img class='cimg' src='css/img/wds_m.png' /><span class='cname'>万点声语网络技术</span></div>
+			
+		</div>
+	</div>
+</div>
+<div class='hrline'></div>
+<!-- expert article -->
+<div class='article_part'>
+	<div class="part_title">专家刊文</div>
+	<div class='part_main'>
+		<div class='pure-g'>	
+		<div class='pure-u-1-3'>
+			<div class='part_title title_2'>心理健康</div>
+			<ul class='list'>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+			</ul>
+			
+
+		</div><div class='pure-u-1-3'>
+			<div class='part_title title_2'>法律知识</div>
+			<ul class='list'>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+			</ul>
+
+		</div><div class='pure-u-1-3'>	
+			<div class='part_title title_2'>医药健康</div>
+			<div class='pic_word_box img100'>
+				<a href="#"><img src='css/img/wds_m.png'/></a>
+				<div class="ptitle">显示标题不限制文字等内容，全部显示信息</div>
+				<div class='short_view'><span class='text'>显示内容20字显示内容显示内容20字显示</span>...&nbsp;<a href='#'>查看更多</a></div>
+			</div>
+		</div></div>
+
+		
+	
+				<div class='pure-g'>
+					<div class='pure-u-1-3'>
+						<a href="#"><div class='pic_word_box'><img src='css/img/wds_m.png'/><div class="ptitle">显示标题不限制文字等内容，全部显示信息</div></div></a>
+						<a href="#"><div class='pic_word_box'><img src='css/img/wds_m.png'/><div class="ptitle">显示标题不限制文字等内容，全部显示信息</div></div></a>
+			
+					</div>
+					<div class='pure-u-1-3'>
+									<div class='part_title title_2'> IT互联网</div>
+						<div>
+							<ul class='list'>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class='pure-u-1-3'>
+						<div>
+							<ul class='list' >
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+							</ul>		
+						</div>
+					</div>
+					
+				</div>
+	</div>
+</div>
+<div class='article_part'>
+	<div class='part_main'>
+		<div class='pure-g'>
+			<div class='pure-u-1-3'>
+				<div class='pic_word_box img100'>
+					<a href="#"><img src='css/img/wds_m.png'/></a>
+					<div class="ptitle">显示标题不限制文字等内容，全部显示信息</div>
+					<div class='short_view'><span class='text'>显示内容20字显示内容显示内容20字显示</span>...&nbsp;<a href='#'>查看更多</a></div>
+				</div>
+			</div>
+			<div class='pure-u-1-3'>
+						<div>
+							<ul class='list'>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+							</ul>
+						</div>
+			</div>
+			<div class='pure-u-1-3'>
+						<div>
+							<ul class='list'>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+								<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+							</ul>
+						</div>			
+			</div>
+		</div>	
+	</div>
+</div>
+
+
+
+<!-- DOC -->
+<!-- <div class="hrline"></div> -->
+<div class="doc_part article_part">
+	<div class="part_title">doc文章</div>
+	<!-- <div style='width:980px;margin:10px auto;' class='part_title'>doc文章</div> -->
+	<div class="part_main">
+		
+		<div class="pure-g">
+			<div class="pure-u-1-3">
+				<ul class='list'>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				</ul>
+			</div>
+			<div class="pure-u-1-3">
+				<div class='pic_word_box img100'>
+					<a href="#"><img src='css/img/wds_m.png'/></a>
+					<div class="ptitle">显示标题不限制文字等内容，全部显示信息</div>
+					<div class='short_view'><span class='text'>显示内容20字显示内容显示内容20字显示</span>...&nbsp;<a href='#'>查看更多</a></div>
+				</div>
+			</div>
+			<div class="pure-u-1-3">
+				<ul class="show_article_pic">
+					<li><img width="140px" height="110px" src="css/img/backgroundimg.png">
+						<a href="#">显示简短的文章标题介绍</a>
+					</li>
+					<li><img width="140px" height="110px" src="css/img/backgroundimg.png">
+						<a href="#">显示简短的文章标题介绍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="pure-g">
+			<div class="pure-u-1-3">
+				<a href="#"><div class='pic_word_box'><img src='css/img/wds_m.png'/><div class="ptitle">显示标题不限制文字等内容，全部显示信息</div></div></a>
+				<a href="#"><div class='pic_word_box'><img src='css/img/wds_m.png'/><div class="ptitle">显示标题不限制文字等内容，全部显示信息</div></div></a>
+			</div>
+			<div class="pure-u-1-3">
+				<ul class='list'>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+					<li><span class='quare'></span><a href='#' title=''>心理健康专家编写撰文标题，显示20个汉字没有点点</a></li>
+				</ul>
+			</div>
+			<div class="pure-u-1-3">
+				<ul class="show_article_pic">
+					<li><img width="140px" height="110px" src="css/img/backgroundimg.png">
+						<a href="#">显示简短的文章标题介绍</a>
+					</li>
+					<li><img width="140px" height="110px" src="css/img/backgroundimg.png">
+						<a href="#">显示简短的文章标题介绍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class='doc_part article_part class-doc '>
+	<div class="part_title">站内动态</div>
+	<!-- <div style='width:980px;margin:10px auto;' class='part_title'>站内动态</div> -->
+	<div class="part_main" id='part_doc'>
+		<div class='doc_comment'>
+			<div class="news_title comment">评论动态</div>
+			<div class='comment_card'>
+				<div class="img"><a href="#"><img width="40px" height="40px"  src='css/img/wds_m.png'/></a></div>
+				<div class='comment_cont'>
+					<a class='ced_name' href="#">用户姓名</a><span style='color:#999'>评论的</span><a class='ced_title' href="#">【文章标题名称】：</a><span style='color:#666'>评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点</span>
+				</div>
+					<p class='ced_time'>2015-01-10 18:00</p>
+			</div>
+			<div class='comment_card'>
+				<div class="img"><a href="#"><img width="40px" height="40px"  src='css/img/wds_m.png'/></a></div>
+				<div class='comment_cont'>
+					<a class='ced_name' href="#">用户姓名</a><span style='color:#999'>评论的</span><a class='ced_title' href="#">【文章标题名称】：</a><span style='color:#666'>评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点</span>
+				</div>
+					<p class='ced_time'>2015-01-10 18:00</p>
+			</div>
+			<div class='comment_card'>
+				<div class="img"><a href="#"><img width="40px" height="40px"  src='css/img/wds_m.png'/></a></div>
+				<div class='comment_cont'>
+					<a class='ced_name' href="#">用户姓名</a><span style='color:#999'>评论的</span><a class='ced_title' href="#">【文章标题名称】：</a><span style='color:#666'>评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点</span>
+				</div>
+					<p class='ced_time'>2015-01-10 18:00</p>
+			</div>
+			<div class='comment_card'>
+				<div class="img"><a href="#"><img width="40px" height="40px"  src='css/img/wds_m.png'/></a></div>
+				<div class='comment_cont'>
+					<a class='ced_name' href="#">用户姓名</a><span style='color:#999'>评论的</span><a class='ced_title' href="#">【文章标题名称】：</a><span style='color:#666'>评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点</span>
+				</div>
+					<p class='ced_time'>2015-01-10 18:00</p>
+			</div>
+			<div class='comment_card'>
+				<div class="img"><a href="#"><img width="40px" height="40px"  src='css/img/wds_m.png'/></a></div>
+				<div class='comment_cont'>
+					<a class='ced_name' href="#">用户姓名</a><span style='color:#999'>评论的</span><a class='ced_title' href="#">【文章标题名称】：</a><span style='color:#666'>评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点评论内容限制在60字以内，并且在最后加上点点</span>
+				</div>
+					<p class='ced_time'>2015-01-10 18:00</p>
+			</div>
+		</div>
+		<div class="news_right">
+			<div class="news news_consult">
+				<div class="news_title">咨询动态</div>
+				<ul class="news_cont">
+					<li><span class='user'>用****:</span>对专家<a class="expert" href="">专家名</a>发起一个网上咨询。</li>
+					<li><span class='user'>用****:</span>对专家<a class="expert" href="">专家名</a>发起一个电话预约订单。</li>
+					<li><span class='user'>用****:</span>对专家<a class="expert" href="">专家名</a>发起一个面谈预约订单。</li>
+					<li><span class='user'>用****:</span>对专家<a class="expert" href="">专家名</a>发起一个立即通话订单。</li>
+					<li><span class='user'>用****:</span>对专家<a class="expert" href="">专家名</a>发起一个网上咨询。</li>
+				</ul>
+			</div>
+			<div class="news news_expert">
+				<div class="news_title">成为专家</div>
+				<ul class="news_cont">
+					<li><a class="expert" href="#">专家名</a>成为万点声律师</li>
+					<li><a class="expert" href="#">专家名</a>成为万点声律师</li>
+					<li><a class="expert" href="#">专家名</a>成为万点声律师</li>
+				</ul>
+			</div>
+			<div class="news news_userpost">
+				<div class="news_title">用户发文</div>
+				<ul class="news_cont">
+					<li><a class="usr" href="#">用户名</a>发表文章<a class="doctitle" href="#">《文章名称》</a></li>
+					<li><a class="usr" href="#">用户名</a>发表文章<a class="doctitle" href="#">《文章名称》</a></li>
+					<li><a class="usr" href="#">用户名</a>发表文章<a class="doctitle" href="#">《文章名称》</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+ 	</div>
+</div>
+<!-- 页脚 -->
+<footer class="copyright area">
+	<div class="copy_link">
+		<a target="_blank" href="aboutus.html">关于本站</a>
+		<a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+		<a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+		<a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+		<a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+		<a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+		<!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+	</div>
+	<div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+	<div class="copy_number">
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<span id="cnzz_stat_icon_1253060728">
+	<a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+	<img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+	<div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+	<div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+</footer>
+</body>
+</html>
+
+
+

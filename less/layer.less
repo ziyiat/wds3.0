@@ -1,0 +1,129 @@
+@charset "utf-8";
+@base-width:1002px;
+@base-color:#2d7bcd;
+@font-base:'SimSun';
+@font-yahei:'Microsoft YaHei';
+@border-color:#dcdcdc;
+@layer-bg:#e5f9ff;
+body{
+	min-height: 2000px;
+}
+.layer{
+	display: none;
+	position: fixed;
+	left: 100px;
+	top: 100px;
+	//left: -500px;
+	margin:  auto;
+	background: @layer-bg;
+	padding: 10px;
+	.boxShadow( -4px, 4px, 2px, #e5e5e5);
+	.title{
+		font-size: 14px;
+		font-family: @font-base;
+		font-weight: bold;
+		margin: 10px;
+	}
+	.content{
+		margin: 10px;
+		font-size: 12px;
+		font-family: @font-base;
+		p{
+			margin: .5em 0;
+		}
+	}
+}
+.eval-icon{
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	background: url(img/eval-icon.png) no-repeat;
+}
+.eval,.comp{
+	width: 400px;
+	color: #333;
+
+	.best{
+		.eval-icon;
+		background-position: 0 -50px;
+		padding-left: 20px;
+	}
+	.well{
+		.eval-icon;
+		background-position: 0 -33px;
+		padding-left: 20px;
+	}
+	.bad{
+		.eval-icon;
+		background-position: 0 -16px;
+		padding-left: 20px;
+	}
+	input[type="radio"]{
+		margin-left: 20px;
+	}
+	textarea{
+		color: #666;
+		width: 100%;
+		height: 100%;
+		border: none;
+		resize:none;
+		background:@layer-bg;
+	}
+	.txarea{
+		height: 180px;
+		padding: 10px;
+		border: 1px #c8c8c8 solid;
+	}
+	form{
+		width: 360px;
+		margin: 0 auto;
+	}
+	.words_count{
+		text-align: right;
+	}
+	.bottom{
+		text-align: right;
+		padding-right: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+
+.comp{
+	width: 400px;
+}
+
+
+
+.wds-btn{
+	width: 48px;
+	height: 24px;
+	background: @base-color;
+	border: none;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.wds-btn-cancel{
+	background:#999;
+}
+.wds-btn-cancel:hover{
+	background: #999;
+}
+
+
+
+
+
+
+.transition {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.boxShadow(@x:0,@y:0,@blur:1px,@color:#000){
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	-o-box-shadow:@arguments;
+	box-shadow: @arguments;
+}

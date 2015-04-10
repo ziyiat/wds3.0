@@ -1,0 +1,56 @@
+@charset "utf-8";
+.mini_loginbox {
+  padding: 30px;
+  overflow: auto;
+  border: 1px #dcdcdc solid;
+  border-top: none;
+  position: absolute;
+  right: 0px;
+  top: 57px;
+}
+.mini_loginbox .inputbox {
+  width: 240px;
+  height: 34px;
+  border: 1px solid #dcdcdc;
+  margin: 20px 0;
+  overflow: hidden;
+}
+.mini_loginbox .inputbox .input {
+  width: 205px;
+  height: 34px;
+  padding-left: 35px;
+  float: right;
+  background: url(img/login_img.png) no-repeat;
+  border: none;
+}
+.mini_loginbox .inputbox .password {
+  background-position: 0 -44px;
+}
+.mini_loginbox .subbtn,
+.mini_loginbox .checkbox,
+.mini_loginbox .forget {
+  display: inline-block;
+  float: left;
+  vertical-align: middle;
+  font-size: 12px;
+  font-family: '';
+  height: 34px;
+  line-height: 34px;
+  margin-right: 10px;
+}
+.mini_loginbox .subbtn input,
+.mini_loginbox .checkbox input,
+.mini_loginbox .forget input {
+  vertical-align: middle;
+}
+.mini_loginbox .subbtn {
+  width: 84px;
+  height: 34px;
+  background-color: #2d7bcd;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+}
+.mini_loginbox a:hover {
+  font-weight: normal;
+}

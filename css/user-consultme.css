@@ -1,0 +1,47 @@
+@charset "utf-8";
+.praisemain {
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 10px;
+  position: relative;
+  line-height: 20px;
+}
+.praisemain .praise_mainbox {
+  overflow: auto;
+}
+.praisemain .praise_name {
+  float: left;
+  color: #2d7bcd;
+  margin-right: 10px;
+}
+.praisemain .praise_main {
+  float: left;
+  color: #333;
+  width: 668px;
+}
+.praisemain .praise_bottom {
+  color: #999;
+  text-align: right;
+  margin-top: 10px;
+}
+.praisemain .praise_bottom .c_over,
+.praisemain .praise_bottom .best {
+  color: #00cd00;
+}
+.praisemain .praise_bottom .c_ing,
+.praisemain .praise_bottom .bad {
+  color: #ff0000;
+}
+.praisemain .praise_bottom .well {
+  color: #FFC600;
+}
+.praisemain .praise_bottom span {
+  margin-left: 10px;
+}
+.praisemain a {
+  color: #2d7bcd;
+}
+.praisemain .c_more,
+.praisemain .c_hidden {
+  margin-left: 10px;
+}

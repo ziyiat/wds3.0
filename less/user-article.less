@@ -1,0 +1,156 @@
+@charset "utf-8";
+@base-width:1002px;
+@base-color:#2d7bcd;
+@font-base:'SimSun';
+@font-yahei:'Microsoft YaHei';
+.myartnav{
+	margin-bottom: 10px;
+	padding: 20px 10px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 2em;
+	a{
+		text-decoration: none;
+	}
+	.current_art{
+		color: #2d7bcd;
+	}
+	a:hover{
+		color: #2d7bcd;
+	}
+}
+.layer{
+	position: relative;
+	float: right;
+	.group{
+		select{
+			width: 8em;
+		}
+	}
+	a{
+		color: #2d7bcd;
+	}
+	.group_manger,.add,.del{
+		margin-left: 10px;
+	}
+	.add,.del{
+		background: @base-color;
+		color: #fff;
+		padding: 1px 5px;
+		text-decoration: none;
+	}
+	.group_layer{
+		display: none;
+		line-height: 20px;
+		position: absolute;
+		top: 30px;
+		right: -10px;
+		width: 240px;
+		background: #fff;
+		border: 1px #dcdcdc solid;
+		padding: 10px;
+		z-index: 100;
+		input[type='text']{
+			width: 120px;
+		}
+	}
+}
+.artdiv{
+	.title{
+		font-size: 12px;
+		margin-bottom: 5px;
+	}
+	.context{
+		padding-left: 0;
+	}
+	.artfoot{
+		margin-top: 10px;
+		text-align: right;
+		line-height: 20px;
+		font-size: 12px;
+		.curgroup,.del{
+			float: left;
+			color: #2d7bcd;
+			text-decoration: none;
+			margin-right: 20px;
+			cursor: pointer;
+		}
+		.del{
+			display: none;
+			a{
+				text-decoration: none;
+			}
+		}
+		.icon-down{
+			display: inline-block;
+			width: 20px;
+			height: 9px;
+			background: url(img/arrow_down.png) no-repeat ;
+			vertical-align: middle;
+
+		}
+		.curgroup:hover{
+			.groups{
+				display: block;
+
+			}
+		}
+		.del:hover{
+			text-decoration: underline;
+		}
+		.groups{
+			display: none;
+			position: absolute;
+			background-color: #fff;
+			border: 1px #dcdcdc solid;
+			padding: 10px;
+			width: 90px;
+			text-align: left;
+			a{
+				margin: 5px 0;
+				display: block;
+				text-decoration: none;
+				color: #666;
+			}
+			a:hover{
+				color: @base-color;
+			}
+		}
+		.zan,.see,.time{
+			ine-height: 20px;
+			margin-left: 20px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		.zan:before{
+			position: relative;
+			top: 1px;
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 14px;
+			background: url(img/workiocn.png) no-repeat;
+			background-position: 0 0;
+			margin-top: 1px;
+		}
+		.see:before{
+			position: relative;
+			top: 1px;
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 14px;
+			background: url(img/workiocn.png) no-repeat;
+			background-position: 0 -17px;
+		}
+		.time{
+			height: 20px;
+			
+		}
+	}
+	.artfoot:hover{
+		.del{
+			display: inline;
+		}
+	}
+}

@@ -1,0 +1,105 @@
+@charset "utf-8";
+.picbox{
+	@boxw:100%;//展示框宽度
+	@picw:220px;
+	@pich:140px;
+	@fyh:40px;//翻页高度
+	@piccount:10;
+	@margin:20px;
+	position: relative;
+	width: @boxw;
+	height: @pich;
+	/* border: 1px solid #ff00ff; */
+	margin: 0 auto;
+	overflow: hidden;
+	.last,.next{
+		line-height: @fyh;
+		position: absolute;
+		font-size: 20px;
+		color: #fff;
+		background: rgba(0,0,0,.5);
+		top: @pich/2-@fyh/2;
+		text-decoration: none;
+		padding: 0 10px;
+		z-index: 999;
+	}
+	.last.nopic,.next.nopic{
+		background: rgba(0, 0, 0, .1);
+	}
+	.last.nopic:hover,.next.nopic:hover{
+		background: rgba(0, 0, 0, .1);
+	}
+	.last:hover,.next:hover{
+		background: rgba(0, 0, 0, .8);
+	}
+	.last{
+		left: -32px;
+	}
+	.next{
+		right: -32px;
+	}
+	.rollpic{
+		position: absolute;
+		left: 0 ;
+	   	width: @picw*10;
+	 	height: @pich;
+	 	list-style-type: none;
+	    li{
+		float: left;
+		width: @picw;
+		height: @pich;
+		cursor: pointer;
+		overflow: hidden;
+		margin-right: @margin;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	    }
+	}
+	.rollpic.transition{
+		transition-duration: .5s;
+		transition-property: left;
+		transition-timing-function: ease;
+	}
+
+}
+	.picbox:hover .last{
+		left: 0px;
+	}
+	.picbox:hover .next{
+		right: 0px;
+	}
+
+.imgnavi{
+	position: relative;
+	width: 248px;
+	height: 82px;
+	overflow: hidden;
+	margin: 0 auto;border: 1px solid #fff;
+	#rollnav{
+		position: absolute;
+		li{
+			position: static;
+			width: 80px;
+			height: 80px;
+			border: 1px solid #fff;
+			float: left;
+			img{
+				position: absolute;
+				width: 80px;
+				height: 80px;
+				.transition(all,.5s,ease-in-out);
+			}
+		}
+	}
+}
+
+
+
+.transition(@p:all,@d:1s,@f:ease,@dy:0s){
+	-webkit-transition: @arguments;
+	-moz-transition: @arguments;
+	-o-transition: @arguments;
+	transition: @arguments;
+}

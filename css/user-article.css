@@ -1,0 +1,147 @@
+@charset "utf-8";
+.myartnav {
+  margin-bottom: 10px;
+  padding: 20px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2em;
+}
+.myartnav a {
+  text-decoration: none;
+}
+.myartnav .current_art {
+  color: #2d7bcd;
+}
+.myartnav a:hover {
+  color: #2d7bcd;
+}
+.layer {
+  position: relative;
+  float: right;
+}
+.layer .group select {
+  width: 8em;
+}
+.layer a {
+  color: #2d7bcd;
+}
+.layer .group_manger,
+.layer .add,
+.layer .del {
+  margin-left: 10px;
+}
+.layer .add,
+.layer .del {
+  background: #2d7bcd;
+  color: #fff;
+  padding: 1px 5px;
+  text-decoration: none;
+}
+.layer .group_layer {
+  display: none;
+  line-height: 20px;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  width: 240px;
+  background: #fff;
+  border: 1px #dcdcdc solid;
+  padding: 10px;
+  z-index: 100;
+}
+.layer .group_layer input[type='text'] {
+  width: 120px;
+}
+.artdiv .title {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.artdiv .context {
+  padding-left: 0;
+}
+.artdiv .artfoot {
+  margin-top: 10px;
+  text-align: right;
+  line-height: 20px;
+  font-size: 12px;
+}
+.artdiv .artfoot .curgroup,
+.artdiv .artfoot .del {
+  float: left;
+  color: #2d7bcd;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.artdiv .artfoot .del {
+  display: none;
+}
+.artdiv .artfoot .del a {
+  text-decoration: none;
+}
+.artdiv .artfoot .icon-down {
+  display: inline-block;
+  width: 20px;
+  height: 9px;
+  background: url(img/arrow_down.png) no-repeat;
+  vertical-align: middle;
+}
+.artdiv .artfoot .curgroup:hover .groups {
+  display: block;
+}
+.artdiv .artfoot .del:hover {
+  text-decoration: underline;
+}
+.artdiv .artfoot .groups {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border: 1px #dcdcdc solid;
+  padding: 10px;
+  width: 90px;
+  text-align: left;
+}
+.artdiv .artfoot .groups a {
+  margin: 5px 0;
+  display: block;
+  text-decoration: none;
+  color: #666;
+}
+.artdiv .artfoot .groups a:hover {
+  color: #2d7bcd;
+}
+.artdiv .artfoot .zan,
+.artdiv .artfoot .see,
+.artdiv .artfoot .time {
+  ine-height: 20px;
+  margin-left: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.artdiv .artfoot .zan:before {
+  position: relative;
+  top: 1px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(img/workiocn.png) no-repeat;
+  background-position: 0 0;
+  margin-top: 1px;
+}
+.artdiv .artfoot .see:before {
+  position: relative;
+  top: 1px;
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  background: url(img/workiocn.png) no-repeat;
+  background-position: 0 -17px;
+}
+.artdiv .artfoot .time {
+  height: 20px;
+}
+.artdiv .artfoot:hover .del {
+  display: inline;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>弹层 Layer</title>
+<link rel='stylesheet' href='css/base.css' />
+<link rel='stylesheet' href='css/common2.css' />
+<link rel='stylesheet' href='css/layer.css' />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+
+</head>
+<body>
+<ul>
+	<li><button type="button" onclick="_show($('eval'));">评价</button><button type="button" onclick="_hideeval($('eval'));">收起</button></li>
+	<li><button type="button" onclick="_show($('.comp'));">投诉</button><button type="button" onclick="_hide($('.comp'));">收起</button></li>
+</ul>
+<script type="text/javascript">
+
+	function _showeval(){
+		 left= (parseInt(document.body.clientWidth) - parseInt($('.layer').width()) )/2 ;
+		$('.eval.layer').css('left', left);
+	}
+	function _hideeval(){
+		$('.eval.layer').css('left', "-999px");
+	}
+	function _show(obj){
+		alert(obj.width());
+		 left= (parseInt(document.body.clientWidth) - parseInt(obj.width()) )/2 ;
+		 obj.css('left', left);
+	}
+</script>
+<div class="layers">
+	
+	<div class="layer eval">
+		<div class="title">评价</div>
+		<form>
+		<div class="content">
+			<p>请评价张丹峰专家的咨询服务!</p>
+			<p>
+				<label><input type="radio" name="eval" checked/><span class="best">好评</span></label>
+				<label><input type="radio" name="eval"/><span class="well">一般</span></label>
+				<label><input type="radio" name="eval"/><span class="bad">差</span></label>
+			</p>
+			<div class="txarea">
+				<textarea name="" placeholder="在此输入您对专家此次咨询服务的评价（200字内）..." onkeyup="checkWordsLength(200,$(this),$('.words_count'));" onkeydown="checkWordsLength(200,$(this),$('.words_count'));"></textarea>
+			</div>
+			<p class="words_count">0/200</p>
+		
+		<p class="bottom"><button type="submit" class="wds-btn wds-btn-ok">提交</button><button type="button" class="wds-btn wds-btn-cancel" onclick="_hideeval();">取消</button></p>
+		</form>
+		</div>
+	</div>
+
+	<div class="layer comp">
+		<div class="title">投诉</div>
+		<form>
+		<div class="content">
+			<p>您正在对张三丰专家的咨询发起投诉！</p>
+			
+			<div class="txarea">
+				<textarea name="" placeholder="在此输入您对专家此次咨询服务的评价（200字内）..." onkeyup="checkWordsLength(200,$(this),$('.words_count'));" onkeydown="checkWordsLength(200,$(this),$('.words_count'));"></textarea>
+			</div>
+			<p class="words_count">0/200</p>
+		
+		<p class="bottom"><button type="submit" class="wds-btn wds-btn-ok">提交</button><button type="button" class="wds-btn wds-btn-cancel" onclick="_hideeval();">取消</button></p>
+		</form>
+		</div>
+	</div>
+	
+</div>
+
+
+<script type="text/javascript">
+				function checkWordsLength(total,obj,tip){
+					var l = obj.val().length;
+					tip.html('<span style=color:#ff0000>'+l+'</span>'+'/'+total);
+					if(l>total){
+						obj.val(obj.val().substr(0,total));
+						tip.html('<span style=color:#ff0000>'+total+'</span>'+'/'+total);
+					}
+				}
+
+
+</script>
+</body>
+</html>

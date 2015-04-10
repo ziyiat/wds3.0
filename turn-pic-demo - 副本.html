@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>图片切换Demo</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/test.css">
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+</head>
+<body>
+
+<div class="picbox">
+    <a class="last transition roll nopic" href="#"><</a>
+    <ul class="rollpic transition">
+        <li><img src="images/xx.jpg"></li>
+        <li><img src="images/1.png"></li>
+        <li><img src="images/xx.jpg"></li>
+        <li><img src="images/1.png"></li>
+        <li><img src="images/xx.jpg"></li>
+        <li><img src="images/1.png"></li>
+    </ul>
+    <a class="next transition roll" href="#">></a>
+</div>
+<script type="text/javascript">
+    var picwidth = parseInt($('.picbox').css('width'));
+    var piccount = $('.rollpic li').length;
+    var nowindex = 1;
+    // console.log(piccount);
+    $('.next').click(function(event) {
+        if(checknowpic(event.target)){
+            nowindex++;
+            var nowpicleft = (nowindex-1)*picwidth*-1;
+            $('.rollpic').css('left',nowpicleft);
+            updateroll(nowindex);
+        }
+        
+        return false;
+    });
+    $('.last').click(function(event) {
+        if(checknowpic(event.target)){
+             nowindex--;
+             var nowpicleft = (nowindex-1)*picwidth*-1;
+             $('.rollpic').css('left',nowpicleft);
+             updateroll(nowindex);
+        }
+        return false;
+    });
+    function checknowpic(obj){
+        var nowpicleft = parseInt($('.rollpic').css('left'));
+        /* Act on the event */
+        if($(obj).attr('class').indexOf('nopic')>-1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    function updateroll(now){
+        var nowpicleft = parseInt($('.rollpic').css('left'));
+        console.log(now);
+            if(now == piccount){
+                $('.next').addClass('nopic');
+            }else{
+                $('.next').removeClass('nopic');
+            }
+            if(now == 1){
+                $('.last').addClass('nopic');
+            }else{
+                $('.last').removeClass('nopic');
+            }
+    }
+</script>
+</body>
+</html>
+

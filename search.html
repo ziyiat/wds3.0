@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>搜索</title>
+<!--
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+-->
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" href="css/buttons-min.css"/>
+<link rel="stylesheet" href="css/grids-min.css"/>
+<link rel="stylesheet" href="css/menus-min.css"/>
+<link rel="stylesheet" type="text/css" href="css/common2.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<style type="text/css">
+.logo-pure{width:1002px;height:64px; margin:0 auto;}
+.main{
+	margin-top: 86px;
+}
+.area.copyright{
+	width: 1002px;
+}
+.optionbox{
+	position: relative;
+}
+.option{
+	position: fixed;
+	top:47px;
+	right: 0px;
+	border: 1px #dcdcdc solid;
+	width: 100px;
+	padding: 20px 0px 0px;
+	text-align: left;
+	z-index: 99999;
+	background: none repeat scroll 0% 0% rgb(236, 237, 240);
+	border-top: medium none;
+	margin-top: 25px;
+	margin-left: -65px;
+}
+.option a{
+	display: block;
+}
+.optionbox:hover .option{
+	display: block;
+}
+</style>
+
+</head>
+
+<body>
+<div class='top'>
+	<div class='logoBar'>
+	    <div class='pure-g logo-pure'>
+        	       <div class=' pure-u-1-2'><a href='/'><img src="css/img/mainlogo.png" alt='万点声在线咨询' class='logo'></a>
+        	       </div>
+       	       <div id='login_message' class='pure-u-1-2'>
+				<ul>
+					<li><a href='index.html'>首页</a></li>
+					<li><a href='login.html'>登录</a></li>
+					<li><a href='reg.html'>免费注册</a></li>
+				</ul>
+                  </div>
+	    </div>
+        </div>
+</div>		      
+	<div class='main'>
+		<div class='search_nav pure-menu pure-menu-horizontal pure-menu-open'>
+			<ul>
+			<!--	<li  class='current'><a href='#'>全部</a></li>-->
+				<li class='current'><a href='#'>专家</a></li>
+				<li><a href='#'>机构</a></li>
+				<li><a href='#'>用户咨询</a></li>
+				<li><a href='#'>doc文章</a></li>
+			</ul>
+		</div>
+		<script>
+		$('.search_nav li').click(function(){
+			$('.current').removeClass('current');
+			$(this).addClass('current');
+		});
+		</script>
+		<div class='search_input_box'>
+			<form> <input type='search' class='searchinput'/><input type='submit' class='pure-button pure-button-primary search_btn' value='搜索'/></form>
+		</div>
+		<div class='pure-g'>
+			<div class='pure-u-2-3 left'>
+				<!--专家-->
+				<div class='div result_class'>搜索到的专家</div>
+				<div class='div card'>
+				 	<img src="css/img/spreadprompt.png">
+					<div class='namespace'>
+						 <a class='name'>专家姓名/笔名</a>
+						 <a class='pro'> 专家职务职称</a>
+						 <a class='wage'>工龄：<i>99</i>年</a>
+						 <a class='zan'>好评数：<i>9999999</i></a>
+					</div>
+					<div class='master'>擅长：一二三四五、上山打老虎！一二三四五、上山打老虎！一二三四五、上山打老虎！一二三四五、上山打老虎！一二三四五、上山打老虎！一二三四五、上山打老虎！<a href='#'>查看详细</a></div>
+				</div>
+				<!--机构-->
+				<div class='div result_class'>搜索到的机构</div>
+				<div class='div card comp_card'>
+					<img src="css/img/wds_b.png" />
+					<p class='cc_name'>阿里巴巴</p>
+					<ul>
+						<li>创始人：马云等18人</li>
+						<li>所在地：杭州</li>
+						<li>成员数：<i>20400</i></li>
+						<li>发帖数：<i>20000</i></li>
+					</ul>
+					<p class='cc_intr'>介绍：阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴阿里巴巴<a href='#'>查看详细</a></p>
+				</div>
+				<!--网上咨询-->
+				<div class='div result_class'>搜索到的用户咨询</div>
+				<div class='div card consult'>
+					<p class='title'>网上咨询的标题不限制字数全部显示，最多80字。。。</p>
+					<p class='context'>就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦<a href='#'>查看详细</a> </p>
+					<div class='dtime'>2015-03-03 19:00</div>
+				</div>
+				<!--电话咨询-->
+				<div class='div card phone'>
+					<p class='context'><span class='ico phone'></span>的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就<a href='#'>查看详细</a></p>
+					<div class='dtime'>2015-03-03 19:00</div>
+				</div>
+				<!--面谈咨询-->
+				<div class='div card face'>
+					<p class='context'><span class='ico face'></span>的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就的快乐飞机啦 就<a href='#'>查看详细</a></p>
+					<div class='dtime'>2015-03-03 19:00</div>
+				</div>
+				<!--DOC-->
+				<div class='div'><strong>搜索到的doc相关文章</strong></div>
+				<div class='div card doc'>
+					<p class='title'>文章标题不限制字数全部显示</p>
+					<p class='context'>就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦</p>
+					<div class='dtime'>2015-03-03 19:00</div>
+				</div>
+				<div class='div card doc'>
+					<p class='title'>文章标题不限制字数全部显示</p>
+					<p class='context'>就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦 就发烧的快乐飞机啦</p>
+					<div class='dtime'>2015-03-03 19:00</div>
+				</div>
+
+			</div>
+			<div class='pure-u-1-3 right'>
+				<div class="div rec">推荐专家</div>
+
+				<div class="div expcard">
+					<div class="expmain">
+						<img src='css/img/wds_m.png' class="ileft">
+						<div class="iright">
+							<p class="ename">专家名</p>
+							<p class="epro">专家职称或头衔</p>
+							<p class="eaward">好评数：<i>666</i></p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="div expcard">
+					<div class="expmain">
+					<div class='ileft'><a href='/'>
+						<img src='css/img/wds_m.png'>
+					</a></div>
+						<div class="iright">
+							<p class="ename"><a href='/' >专家名</a></p>
+							<p class="epro">专家职称或头衔</p>
+							<p class="eaward">好评数：<i>666</i></p>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+</div>
+
+<!-- 页脚 -->
+ <footer class="copyright area">
+	<div class="copy_link">
+		<a target="_blank" href="aboutus.html">关于本站</a>
+		<a target="_blank" class="sina_weibo" href="http://weibo.com/wandiansheng" rel="nofollow" style="padding-left:18px;">官方微博</a>
+		<a target="_blank" class="zhuanjia" href="reg_exp.html">成为专家</a>
+		<a target="_blank" href="http://site.wandiansheng.com/contact.html">联系我们</a>
+		<a target="_blank" href="http://site.wandiansheng.com/convention.html">万点声社区</a>
+		<a target="_blank" href="http://site.wandiansheng.com/help.html" style="border:none;">使用帮助</a>
+		<!-- <a href="javascript:;" style="border:none;">意见反馈</a> -->
+	</div>
+	<div class="copy_wds">© 2014 WanDianSheng <a target="_blank" href="http://site.wandiansheng.com/serve.html">使用万点声前必读</a> 京ICP证14003771-1号 <i class="copyright_ico"></i><img src="css/img/copyright.png"/></div>
+	<div class="copy_number">
+	<script type="text/javascript">
+	var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+	document.write(unescape("%3Cspan id='cnzz_stat_icon_1253060728'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253060728%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<span id="cnzz_stat_icon_1253060728">
+	<a href="http://www.cnzz.com/stat/website.php?web_id=1253060728" target="_blank" title="站长统计">
+	<img src="http://icon.cnzz.com/img/pic1.gif" border="0" hspace="0" vspace="0"></a></span><script src=" http://s95.cnzz.com/z_stat.php?id=1253060728&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1253060728&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script>备案编号：京公网安备<span>1101087014670</span></div>
+	<div>用户言论不代表本站观点；医生对患者提供的是病情建议而非诊断结果！</div>
+	<div class="copy_icp"><i class="icp_icon"></i><a href="http://www.miibeian.gov.cn">经营许可证编号：京ICP证140529号</a></div> 
+
+</footer>
+</body>
+</html>

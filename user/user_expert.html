@@ -1,0 +1,129 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>个人中心</title>
+<meta http-equiv="X-UA-Compatible" content="eadg" />
+<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+<link rel="stylesheet" href="../css/user.css" />
+<script src="../js/user.js"></script>
+
+<style>
+/*重写navlist样式*/
+	.navlist{
+		background-color: transparent;
+	}
+	.navlist ul li{ 
+		display: inline-block;
+		width: 220px;
+		height: 260px;
+		background-color: #535353; /*还有图片*/
+		color: #fff;
+		margin: 0 40px 20px 0;
+		padding: 0px;
+		float: left;
+		font-size: 14px;
+		font-family: '宋体';
+		font-weight: bold;
+	}
+	.navlist ul li:nth-child(4n){ 
+		margin-right: 0px;
+	}
+	.navlist ul li a:hover{
+		background-color:transparent;
+		color:#fff;	
+	}
+
+</style>
+</head>
+	
+<body>
+<div class='container'>
+<header class="userheader">
+<div class="bigbox">
+	<div class='bgg'>
+	<!-- LEFT -->
+	<div class="userNav">
+		<ul>
+			<li><a href="../index.html">返回首页</a></li>
+			<li><a href="">个人中心</a></li>
+			<li><a href="">我的消息</a></li>
+			<li><a href="">预约订单</a></li>
+			<li><a href="">我的点币</a></li>
+			<li><a href="">doc首页</a></li>
+			<li><a href="">账户设置</a></li>
+			<li><a href="">退出帐号</a></li>		
+		</ul>
+	</div>
+		
+		<!-- 中 	-->
+	<div class="userInfo">
+		<div class='userInfo_main'>
+			<div class="user_img"><img src="../images/23.png"/></div>
+			<div class="user_name">张国荣</div>
+			<div class="expertiocn">
+           			 	<a href="#" class="expert_medal_box">
+              					<span class="expert_medal medal_lawyer" title="律师"></span>
+          			               </a>
+            			 	<a href="#" class="cid_iocn">
+                				<span class="lv_num l_v" title="实名认证"></span>
+               			</a>
+               			<a href="#" class="lv_ico color1">
+                 				 <span class="lv_num l10" title="等级1"></span>
+                			</a>
+          		 	</div>
+			<div class="user_pro">香港歌手</div>
+		</div>
+	</div>
+	<!-- RIGHT -->	
+	<div class="edit">
+     		<div class='host'>
+			<div class="edit_btn"><span class='edit_icon'></span></div>
+			<div class="user_edit">
+				<ul>
+					<li style="display: none;" index='1'>封面图</li>
+					<li style="display: none;" index='2'>专家介绍</li>
+					<li style="display: none;" index='3'>服务介绍</li>
+				</ul>
+			</div>
+     		</div>
+     		<div class='logfalse logbar'>
+         			<a href="#">登陆</a><a href="../reg.html">注册</a>
+  	  	</div>
+	</div>
+	<div class='user_follow'>
+	    <ul>
+	            <li>99999</li>
+	            <li>99999</li>
+	            <li>99999</li>
+	     		<li>回答数</li>
+	            <li>关注我的</li>
+	            <li>我关注的</li>
+	      </ul>
+	</div>
+	</div>
+</div>
+
+
+
+<div class='navlist'>
+	<ul>
+	<!-- .host 为主态显示  .guest为客态显示   其他两者都显示-->
+		<li><a href="user.html" >专家介绍</a></li>
+		<li><a href="preconsult.html">咨询预约</a></li>
+ 		<li><a href='user_consult_online.html'>网上咨询</a></li>
+             	<li><a href='user_consult_phone.html'>电话咨询</a></li>
+              	<li><a href='user_consult_face.html'>面谈咨询</a></li>
+		<li><a href="service.html">服务介绍</a></li>
+		<li><a href="eval.html">评价</a></li>
+		<li><a href="article.html">文章</a></li>
+		<li><a href='#'>预约咨询</a></li>
+		<li><a href='#'>机构成员</a></li>
+		<li><a href='#'>机构介绍</a></li>
+	</ul>
+</div>
+
+</header>
+
+</div>
+</body>
+</html>

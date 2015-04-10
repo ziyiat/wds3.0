@@ -1,0 +1,553 @@
+@charset "utf-8";
+@base-width:1002px;
+@base-color:#2d7bcd;
+@font-base:'SimSun';
+@font-yahei:'Microsoft YaHei';
+body{
+	padding-top: 57px;
+	width: @base-width;
+}
+.top{
+	.logoBar{
+		margin-top: 0;
+	}
+	.pure-u-1-2:nth-child(1){
+		margin-top: 3.5px;
+	}
+	
+}
+.block{
+	display: block;
+	background-color: #fff;
+	padding: 0;
+}
+.userdiv{
+	display: block;
+	background: #fff;
+	border: 1px solid #dcdcdc;
+	color: #666;
+	.title{
+		color: #333;
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: bold;
+	}
+	.context{
+		font-size: 12px;
+		padding-left:.5em;
+		a{
+			color: #2d7bcd;
+		}
+	}
+}
+
+.container{
+	width: @base-width;
+	margin: auto;
+	font-size: 14px;
+	font-family: @font-base;
+
+}
+.headerbg{
+	width: @base-width;
+	height: 380px;
+	background: url(../images/2.jpg);
+	margin-top: 10px;
+	.header{
+		position: relative;
+		width: @base-width - 40px;
+		height: 380px - 40px;
+		background: url(img/bgg.png);
+		padding: 20px;
+		color: #fff;
+		.usertopnav{
+			position: absolute;
+			left: 20px;
+			top: 20px;
+		}
+		.useredit{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+		}
+		.userinfo{
+			.avatar{
+				width: 140px;
+				height: 140px;
+				border: 4px solid rgba(255, 255, 255, .3);
+				margin: 100px auto 0;
+			}
+			.userinfomain{
+				text-align: center;
+				p:nth-child(1){
+					font-size: 14px;
+					font-family: @font-base;
+					font-weight: bold;
+					margin-top: 10px;
+				}
+				p:nth-child(3){
+					font-size: 12px;
+				}
+				a{
+					text-decoration: none;
+				}
+				p{
+					margin: .5em 0;
+				}
+			}
+		}
+		.userfollow{
+			position: absolute;
+			right: 20px;
+			bottom: 20px;
+			font-size: 12px;
+			.left{
+				margin: 0 5px;
+				text-align: center;
+				p{
+					margin: .5em 0;
+				}
+				p:nth-child(1){
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+.navi{
+	font-size: 16px;
+	text-align: center;
+	color: #666;
+	height: 44px;
+	font-family: @font-yahei;
+	margin-top: 25px;
+	margin-bottom: 0;
+	ul{
+		height: 42px;
+		line-height: 42px;
+		display: inline-block;
+		li{
+			float: left;
+			height: 42px;
+			margin: 0 10px;
+			a{
+				text-decoration: none;
+				padding: 0 20px;
+			}
+		}
+		li.current{
+			font-weight: bold;
+			// border-bottom: 2px #2d7bcd solid;
+		}
+		li:hover li.current{
+
+		}
+	}
+}
+.usermain{
+	@left-w:240px;
+	@right-w:@base-width - @left-w - 20px;
+	/* @border-color:#999; */
+	margin-top: 20px;
+	.left{
+		width: @left-w;
+		.userdiv{
+			margin-bottom: 10px;
+		}
+	}
+	.right{
+		width: @right-w;
+		min-height: 700px;
+	}
+	.information{
+		color: #666;
+		line-height: 20px;
+	}
+	.user_title{
+		font-weight: bold;
+		font-family: @font-yahei;
+		color: #666;
+		padding: 5px 0;
+	}
+	.div_title{
+		.user_title;
+	}
+	.user_title:before{
+		display: inline-block;
+		height: 15px;
+		width: 20px;
+		overflow: hidden;
+		background: url(img/menu_icon.png) no-repeat ;
+		background-position: -77px -133px;
+		content: "";
+	}
+	.user_context{
+		.userdiv;
+		min-height: 20px;
+		font-size: 12px;
+		padding: 10px 20px;
+		margin-bottom: 10px;
+	}
+	.list{
+		font-size: 12px;
+		line-height: 22px;
+		li{
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow:ellipsis;
+			a{
+				text-decoration: none;
+			}
+		}
+		li:hover a{
+			color: #2d7bcd;
+			text-decoration: underline;
+		}
+	}
+	
+}
+.orgmain{
+	.mydata_praisebox{
+		margin-top: 0;
+	}
+}
+.hidein{
+	color: #2d7bcd;
+	text-align: right;
+}
+.in_title{
+	.userdiv;
+	font-size: 14px;
+	color: #666;
+	padding: 10px;
+}
+
+.followme{
+			padding: 5px;
+			text-align: center;
+			a{
+				display: inline-block;
+				width: 200px;
+				height: 28px;
+				line-height: 30px;
+				background: #999;
+				color: #fff;
+				text-decoration: none;
+				font-weight: bold;
+				letter-spacing: .5em;
+			}
+			a:hover{
+				background: @base-color;
+			}
+}
+
+.consult{
+			height: 44px;
+			line-height: 44px;
+			text-align: center;
+			a{
+				background: #2d7bcd;
+				color: #fff;
+				text-decoration: none;
+				padding: 5px;
+				.boxShadow(1px,1px,2px,rgba(0, 0, 0, .2));
+			}
+}
+.list{
+	margin-top: 3px;
+}
+.mydata_praisebox {
+		  padding: 10px;
+		  color: #666;
+		  .mydata_praisetitle {
+			  width: 48px;
+			  text-align: right;
+			  font-size: 12px;
+			  line-height: 34px;
+			  display: inline-block;
+			}
+			.praise_percent {
+			  display: inline-block;
+			  height: 16px;
+			  width: 140px;
+			  border: 1px solid #d2d2d2;
+			  vertical-align: middle;
+			  line-height: 20px;
+			  padding: 1px;
+			}
+			.praise_best {
+			  height: 16px;
+			  display: inline-block;
+			  background-color: #00CD00;
+			}
+			.praise_well {
+			  height: 16px;
+			  display: inline-block;
+			  background-color: #ffc600;
+			}
+			.praise_bad {
+			  height: 16px;
+			  display: inline-block;
+			  background-color: #ff0000;
+			}
+			.praiseall_number,.best_num,.well_num,.bad_num{
+				font-size: 12px;
+			}
+		}
+.articlebox{
+	padding: 10px;
+	min-height: 350px;
+}
+.praisemain {
+	.userdiv;
+}
+
+.icon-iphone{
+	display: inline-block;
+	background: url(img/order_phone.png) no-repeat ;
+	padding-left: 15px;
+	height: 20px;
+}
+.icon-ionline{
+	display: inline-block;
+	
+	padding-left: 15px;
+	padding-left: 15px;
+	height: 20px;
+}
+.icon-iface{
+	display: inline-block;
+	background: url(img/order_face.png) no-repeat ;
+	padding-left: 15px;
+	padding-left: 15px;
+	height: 20px;
+}
+
+/*等级 认证*/
+.expertiocn {
+  height: 20px;
+}
+.expertiocn a {
+  text-decoration: none;
+}
+.lv_num.l_v {
+  background-position: 0px -563px;
+}
+.lv_num {
+  vertical-align: -1px;
+  display: inline-block;
+  height: 18px;
+  font-size: 0px;
+  line-height: normal;
+  width: 38px;
+  background: url("img/lv_iocn.png") no-repeat scroll 0px -120px transparent;
+}
+/*用户等级*/
+.lv_ico.color2 {
+  background-position: 0 -15px;
+}
+.lv_ico.color3 {
+  background-position: 0 -30px;
+}
+.lv_ico.color4 {
+  background-position: 0 -45px;
+}
+.lv_num.l0 {
+  background-position: 0 0px;
+}
+.lv_num.l1 {
+  background-position: 0 -26px;
+}
+/*.lv_ico.color1 .lv_num.l1, .lv_num.l1b {background-position:0 -130px}*/
+span.lv_num.l2 {
+  background-position: 0 -53px;
+}
+.lv_num.l3 {
+  background-position: 0 -80px;
+}
+.lv_num.l4 {
+  background-position: 0 -107px;
+}
+.lv_num.l5 {
+  background-position: 0 -134px;
+}
+.lv_num.l6 {
+  background-position: 0 -161px;
+}
+.lv_num.l7 {
+  background-position: 0 -188px;
+}
+/*.lv_ico.color2 .lv_num.l7, .lv_num.l7b {background-position:0 -200px}*/
+.lv_num.l8 {
+  background-position: 0 -215px;
+}
+.lv_num.l9 {
+  background-position: 0 -242px;
+}
+.lv_num.l10 {
+  background-position: 0 -269px;
+}
+.lv_num.l11 {
+  background-position: 0 -296px;
+}
+.lv_num.l12 {
+  background-position: 0 -323px;
+}
+.lv_num.l13 {
+  background-position: 0 -350px;
+}
+.lv_num.l14 {
+  background-position: 0 -377px;
+}
+/*.lv_ico.color3 .lv_num.l14, .lv_num.l14b {background-position:0 -280px}*/
+.lv_num.l15 {
+  background-position: 0 -404px;
+}
+.lv_num.l16 {
+  background-position: 0 -431px;
+}
+.lv_num.l17 {
+  background-position: 0 -458px;
+}
+.lv_num.l18 {
+  background-position: 0 -485px;
+}
+.lv_num.l19 {
+  background-position: 0 -512px;
+}
+.lv_num.l20 {
+  background-position: 0 -539px;
+}
+/*专家徽章*/
+.expert_medal_box {
+  vertical-align: -2px;
+  margin: 0 4px;
+}
+.expert_medal {
+  display: inline-block;
+  height: 18px;
+  width: 26px;
+  background: url(img/expert_logo.png);
+  background-repeat: no-repeat;
+}
+.medal_western_medicine {
+  background-position: top;
+}
+/*西医*/
+.medal_chinese_medicine {
+  background-position: 0 -23px;
+}
+/*中医*/
+.medal_lawyer {
+  background-position: 0 -46px;
+}
+/*律师*/
+.medal_technician {
+  background-position: 0 -69px;
+}
+/*技师*/
+.medal_love {
+  background-position: 0 -483px;
+}
+/*情感咨询*/
+.medal_translate {
+  background-position: 0 -115px;
+}
+/*翻译*/
+.medal_IT {
+  background-position: 0 -138px;
+}
+/*IT互联网*/
+.medal_pet {
+  background-position: 0 -161px;
+}
+/*宠物*/
+.medal_agriculture {
+  background-position: 0 -184px;
+}
+/*农业*/
+.medal_car {
+  background-position: 0 -207px;
+}
+/*汽车*/
+.medal_design {
+  background-position: 0 -230px;
+}
+/*设计传媒*/
+.medal_consult {
+  background-position: 0 -253px;
+}
+/*咨询商业*/
+.medal_professor {
+  background-position: 0 -276px;
+}
+/*教育*/
+.medal_real_estate {
+  background-position: 0 -299px;
+}
+/*房产*/
+.medal_building {
+  background-position: 0 -322px;
+}
+/*建筑交通*/
+.medal_electron {
+  background-position: 0 -345px;
+}
+/*数码通信*/
+.medal_beauty {
+  background-position: 0 -368px;
+}
+/*美容化妆*/
+.medal_game {
+  background-position: 0 -391px;
+}
+/*游戏动漫*/
+.medal_art {
+  background-position: 0 -414px;
+}
+/*文学艺术*/
+.medal_e-commerce {
+  background-position: 0 -437px;
+}
+/*电子商务*/
+.medal_child {
+  background-position: 0 -460px;
+}
+/*育儿孕妇*/
+/*.medal_commercial{background-position:0 -200px;}商业*/
+/*.medal_internet{background-position:0 -400px;}互联网*/
+/*.medal_entertainment{background-position:0 -240px;}娱乐*/
+/*.medal_tourism{background-position:0 -300px;}旅游*/
+/*.medal_kindergarten_teacher{background-position:0 -320px;}幼教*/
+/*.medal_sports{background-position:0 -380px;}体育运动*/
+/*.medal_communication{background-position:0 -460px;}通信*/
+/*.medal_traffic{background-position:0 -540px;}交通*/
+/*.medal_health{background-position:0 -560px;}健康*/
+/*.medal_fashion{background-position:0 -580px;}时尚购物*/
+/*.medal_stay{background-position:0 -620px;}餐饮住宿*/
+/*.medal_life{background-position:0 -660px;}家居生活*/
+/*.medal_military{background-position:0 -680px;}军事*/
+/*.medal_media{background-position:0 -700px;}传媒*/
+/*.medal_make{background-position:0 -720px;}制造*/
+/*.medal_high_teacher{background-position:0 -60px;}中学老师*/
+/*.medal_default{background-position:0 -483px;}默认*/
+
+/* Example One */
+#example-one{position:relative;}
+#example-one li{display:inline-block;}
+#example-one a{float:left;text-decoration:none;text-transform:uppercase}
+#example-one a:hover{color:#2d7bcd}
+#magic-line{position:absolute;bottom:-2px;left:0;width:100px;height:2px;background:#2d7bcd}
+.current_page_item a{color:#2d7bcd !important}
+
+
+
+
+
+
+.boxShadow(@x:0,@y:0,@blur:1px,@color:#000){
+	-moz-box-shadow: @arguments;
+	-webkit-box-shadow: @arguments;
+	-o-box-shadow:@arguments;
+	box-shadow: @arguments;
+}

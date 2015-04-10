@@ -1,0 +1,294 @@
+@charset "utf-8";
+body {
+  font: 14px 'SimSun';
+}
+.block {
+  display: block;
+  background-color: #fff;
+  font-family: '宋体';
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.font-yahei {
+  font-family: 'Microsoft YaHei';
+}
+.topshowimg {
+  width: 1002px;
+  height: 280px;
+  background: url(../images/1.png);
+  font-size: 12px;
+  padding: 10px 0;
+  position: relative;
+}
+.topshowimg .expert_class {
+  background: rgba(0, 0, 0, 0.4);
+  height: 32px;
+}
+.topshowimg .expert_class a {
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 5px;
+  margin-right: 3px;
+  line-height: 32px;
+}
+.topshowimg .catebox {
+  margin: 70px auto 0;
+}
+.topshowimg .back {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 4px 10px;
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+.topshowimg a:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.consult_left {
+  width: 720px;
+}
+.exp_area {
+  padding: 20px;
+  border: 1px #e6e6e6 solid;
+}
+.exp_area .pure-u-left {
+  color: #666;
+}
+.exp_area .pure-u-right {
+  width: 740px;
+}
+.consult-way {
+  width: 700px;
+}
+.explist_title {
+  width: 700px;
+}
+.expertbox {
+  padding: 0;
+  width: 720px;
+}
+.expertbox .expertcard {
+  margin-left: 50px;
+}
+.expertbox .expertcard .estatus {
+  font-size: 12px;
+  width: 3em;
+  overflow: hidden;
+  height: 20px;
+  line-height: 20px;
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+}
+.expertbox .expertcard .estatus .es_phone.green {
+  color: #00cd00;
+}
+.expertbox .expertcard .estatus .es_phone {
+  color: #ff0000;
+}
+.expertbox .expertcard .estatus span {
+  white-space: nowrap;
+}
+.expertbox .expertcard.viewlist {
+  width: 680px;
+  background: #fff;
+  padding: 20px;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: none;
+  border: 1px #e6e6e6 solid;
+}
+.expertbox .expertcard.viewlist .estatus {
+  position: static;
+  width: auto;
+  height: 32px;
+  color: #666;
+  line-height: 12px;
+  position: relative;
+  top: 15px;
+  left: 0px;
+  padding-top: 10px;
+  border-top: 1px #e6e6e6 solid;
+}
+.expertbox .expertcard.viewlist .estatus .es_phone,
+.expertbox .expertcard.viewlist .estatus .es_end {
+  display: block;
+  float: left;
+  border-right: 1px #e6e6e6 solid;
+  width: 232px;
+  text-align: center;
+}
+.expertbox .expertcard.viewlist .estatus .es_lines {
+  margin-left: 20px;
+}
+.expertbox .expertcard.viewlist .namespace {
+  left: 130px;
+  top: 15px;
+}
+.expertbox .expertcard.viewlist .emaster {
+  top: 15px;
+}
+.expertbox .expertcard.viewlist .econsult {
+  top: 15px;
+}
+.expertbox .expertcard.viewlist .econsult .wds-btn {
+  position: absolute;
+  width: 58px;
+  height: 18px;
+  right: -20px;
+}
+.expertbox.viewlist {
+  background: transparent;
+  padding: 0px;
+  margin-bottom: 0;
+}
+.expertbox.viewlist .expertcard {
+  position: relative;
+  width: 680px;
+  height: auto;
+  margin-left: 0px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 20px;
+  background: #fff;
+  border: 1px #e6e6e6 solid;
+}
+.expertbox.viewlist .expertcard .eimg {
+  width: 100px;
+  height: 100px;
+}
+.expertbox.viewlist .expertcard div.eimg {
+  border: 1px #e6e6e6 solid;
+}
+.expertbox.viewlist .expertcard .elyer {
+  display: none;
+}
+.expertbox.viewlist .expertcard .namespace {
+  position: absolute;
+  top: 15px;
+  left: 130px;
+}
+.expertbox.viewlist .expertcard .namespace p {
+  text-align: left;
+}
+.expertbox.viewlist .expertcard .epro,
+.expertbox.viewlist .expertcard .eage,
+.expertbox.viewlist .expertcard .eaward {
+  font: 12px 'SimSun';
+  color: #333;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.expertbox.viewlist .expertcard .eage,
+.expertbox.viewlist .expertcard .eaward,
+.expertbox.viewlist .expertcard .emaster {
+  display: block;
+}
+.expertbox.viewlist .expertcard .emaster {
+  width: 29em;
+  height: 80px;
+  text-align: left;
+  position: absolute;
+  top: 15px;
+  left: 255px;
+  line-height: 20px;
+  overflow: hidden;
+}
+.expertbox.viewlist .expertcard .econsult {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  width: 20px;
+}
+.expertbox.viewlist .expertcard .consult-icon {
+  margin-bottom: 10px;
+}
+.expertbox.viewlist .expertcard i {
+  font-style: normal;
+}
+.expertbox.viewlist .expertcard .estatus {
+  position: static;
+  width: auto;
+  height: 12px;
+  color: #666;
+  line-height: 12px;
+  position: relative;
+  top: 15px;
+  left: 0px;
+  padding-top: 10px;
+  border-top: 1px #e6e6e6 solid;
+}
+.expertbox.viewlist .expertcard .estatus .es_phone,
+.expertbox.viewlist .expertcard .estatus .es_end {
+  display: block;
+  float: left;
+  border-right: 1px #e6e6e6 solid;
+  width: 232px;
+  text-align: center;
+}
+.expertbox.viewlist .expertcard .estatus .es_lines {
+  margin-left: 20px;
+}
+.work_title {
+  width: 240px;
+}
+.work_title .more {
+  text-decoration: none;
+  margin-right: 0;
+  float: right;
+}
+.work_list {
+  width: 260px;
+}
+.work_list .w_zhaiyao {
+  width: 140px;
+}
+.work_list .w_zhaiyao .com_name {
+  font-size: 12px;
+}
+.expertinfo {
+  width: 240px;
+  padding: 10px;
+}
+.list li {
+  margin: 10px 0;
+  /* float: left; */
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 21em;
+  white-space: nowrap;
+  /* 
+	line-height: 1em; */
+}
+.list a {
+  text-decoration: none;
+  color: #666;
+}
+.list a:hover {
+  color: #2d7bcd;
+  text-decoration: underline;
+}
+.expertinfo .list {
+  font-size: 12px;
+}
+.expertinfo .list li {
+  width: 19em;
+}
+.texthidden {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.transition {
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
